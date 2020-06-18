@@ -10,62 +10,101 @@
         <!--Dashboard-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="CACApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="DashboardViewController" customModule="CACApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTw-MZ-dv6">
-                                <rect key="frame" x="300" y="44" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.54901960780000003" green="0.73725490199999999" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming Appointments" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnA-UF-OTb">
+                                <rect key="frame" x="112" y="174" width="190" height="31"/>
+                                <color key="backgroundColor" red="1" green="0.46973073938157583" blue="0.41416191305948136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="o1d-Rx-kPt"/>
+                                    <constraint firstAttribute="height" constant="31" id="Q4y-f0-R4e"/>
                                 </constraints>
-                                <state key="normal" title="Schedule" image="plus.rectangle" catalog="system">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="scheduleMeeting:" destination="9pv-A4-QxB" eventType="touchUpInside" id="bC6-B9-VGk"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming Appointments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnA-UF-OTb">
-                                <rect key="frame" x="111" y="172" width="192" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="QjF-ic-dM0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6l7-rv-0Sy">
                                 <rect key="frame" x="0.0" y="265" width="414" height="548"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="sectionIndexBackgroundColor" red="1" green="0.57408606289999997" blue="0.53868426820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.46973073939999999" blue="0.4141619131" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="548" id="Fhg-BE-UA0"/>
+                                </constraints>
+                                <color key="sectionIndexBackgroundColor" red="1" green="0.46973073939999999" blue="0.4141619131" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q53-pz-6PT">
-                                <rect key="frame" x="20" y="43" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q53-pz-6PT">
+                                <rect key="frame" x="20" y="54" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.54901960780000003" green="0.73725490199999999" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ZcX-Cg-d4h"/>
+                                </constraints>
                                 <state key="normal" title="New" image="video.badge.plus" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="scheduleMeeting:" destination="9pv-A4-QxB" eventType="touchUpInside" id="SiS-90-yPn"/>
+                                    <action selector="new:" destination="9pv-A4-QxB" eventType="touchUpInside" id="fqR-GD-99v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTw-MZ-dv6">
+                                <rect key="frame" x="294" y="54" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.54901960780000003" green="0.73725490199999999" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9of-6e-I2s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <state key="normal" title="Schedule" image="plus.rectangle" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="schedule:" destination="9pv-A4-QxB" eventType="touchUpInside" id="9eg-GE-CCY"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.57408606288630093" blue="0.53868426815759585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="q53-pz-6PT" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" constant="-1" id="57n-W3-5oR"/>
-                            <constraint firstItem="6l7-rv-0Sy" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="B9F-jz-ISm"/>
-                            <constraint firstItem="dTw-MZ-dv6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="q53-pz-6PT" secondAttribute="trailing" constant="8" symbolic="YES" id="Ey7-r7-uA5"/>
-                            <constraint firstItem="NnA-UF-OTb" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="111" id="HzE-h9-EG2"/>
-                            <constraint firstItem="NnA-UF-OTb" firstAttribute="centerX" secondItem="6l7-rv-0Sy" secondAttribute="centerX" id="JQf-8l-wlG"/>
-                            <constraint firstItem="NnA-UF-OTb" firstAttribute="top" secondItem="q53-pz-6PT" secondAttribute="bottom" constant="29" id="Oed-gc-Uck"/>
-                            <constraint firstItem="6l7-rv-0Sy" firstAttribute="top" secondItem="NnA-UF-OTb" secondAttribute="bottom" constant="62" id="Tyh-V1-GbO"/>
-                            <constraint firstItem="NnA-UF-OTb" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="VEP-we-BeC"/>
-                            <constraint firstItem="6l7-rv-0Sy" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="Wmr-Bl-ZHY"/>
-                            <constraint firstItem="NnA-UF-OTb" firstAttribute="top" secondItem="dTw-MZ-dv6" secondAttribute="bottom" constant="28" id="fMt-se-j3s"/>
-                            <constraint firstItem="dTw-MZ-dv6" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="onG-2q-rZn"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="dTw-MZ-dv6" secondAttribute="trailing" constant="14" id="q6a-YS-ZU5"/>
-                            <constraint firstItem="q53-pz-6PT" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="wsN-Ll-ttg"/>
+                            <constraint firstItem="6l7-rv-0Sy" firstAttribute="top" secondItem="NnA-UF-OTb" secondAttribute="bottom" constant="60" id="1Sb-Xx-rtS"/>
+                            <constraint firstItem="q53-pz-6PT" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="10" id="5cm-Ua-Irc"/>
+                            <constraint firstItem="q53-pz-6PT" firstAttribute="top" secondItem="dTw-MZ-dv6" secondAttribute="top" id="BIa-uu-hds"/>
+                            <constraint firstItem="NnA-UF-OTb" firstAttribute="top" secondItem="q53-pz-6PT" secondAttribute="bottom" constant="20" id="CGs-oy-EQH"/>
+                            <constraint firstItem="6l7-rv-0Sy" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="Ft2-X9-JzO"/>
+                            <constraint firstItem="6l7-rv-0Sy" firstAttribute="centerX" secondItem="NnA-UF-OTb" secondAttribute="centerX" id="TiD-uQ-b7l"/>
+                            <constraint firstItem="q53-pz-6PT" firstAttribute="bottom" secondItem="dTw-MZ-dv6" secondAttribute="bottom" id="krU-1W-msb"/>
+                            <constraint firstItem="dTw-MZ-dv6" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="opy-R8-D4R"/>
+                            <constraint firstItem="6l7-rv-0Sy" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="unM-27-FkP"/>
+                            <constraint firstItem="q53-pz-6PT" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="uwE-Q6-BVd"/>
+                            <constraint firstItem="6l7-rv-0Sy" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="wGS-8u-v21"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
