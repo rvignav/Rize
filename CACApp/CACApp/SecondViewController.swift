@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import "Lmi/Vidyoclient/VideoConnector_Objc.h"
+//import "Lmi/Vidyoclient/VideoConnector_Objc.h"
 
-@Interface SecondViewController : UIViewController <IConnect>
+//@Interface SecondViewController : UIViewController <IConnect>
 
 class SecondViewController: UIViewController {
     @IBOutlet weak var VideoView: UIView!
