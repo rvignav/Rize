@@ -128,23 +128,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pfp" translatesAutoresizingMaskIntoConstraints="NO" id="5Z0-P8-R5J">
-                                <rect key="frame" x="133" y="75" width="150" height="150"/>
+                                <rect key="frame" x="133" y="75" width="158.5" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="0Dq-M2-SJ5"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IE5-aK-vPs">
-                                <rect key="frame" x="185.5" y="233" width="45" height="21"/>
+                                <rect key="frame" x="190" y="233" width="45" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8d-G1-ecl">
-                                <rect key="frame" x="359" y="44" width="35" height="35"/>
+                                <rect key="frame" x="367.5" y="44" width="26.5" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="RBA-49-7A3"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="person.badge.plus.fill" catalog="system">
+                                <state key="normal" image="ellipsis" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24"/>
                                 </state>
                                 <connections>
@@ -156,7 +156,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Past Transcripts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwt-bR-cFy">
-                                <rect key="frame" x="146" y="400" width="124" height="21"/>
+                                <rect key="frame" x="146" y="400" width="132.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -210,8 +210,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="person.badge.plus.fill" catalog="system" width="128" height="116"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="pfp" width="920" height="706"/>
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>
