@@ -149,6 +149,7 @@
                                 </state>
                                 <connections>
                                     <action selector="editProfile:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Uzb-OZ-FRh"/>
+                                    <segue destination="ilf-mX-ipP" kind="show" id="T00-zw-fgv"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rwn-VK-qod">
@@ -189,6 +190,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.27536231884062" y="358.92857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TPv-yx-3OM">
+            <objects>
+                <viewController id="ilf-mX-ipP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8yD-3a-5kG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pfp" translatesAutoresizingMaskIntoConstraints="NO" id="W3f-t2-iab">
+                                <rect key="frame" x="128" y="55" width="158.5" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uua-qE-Ueo">
+                                <rect key="frame" x="151" y="213" width="112" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Upload Picture"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="CGr-cf-Kye"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mnh-5w-cfW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nHv-v2-KtR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1660.8695652173915" y="100.44642857142857"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
