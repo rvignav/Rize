@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -127,15 +127,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pfp" translatesAutoresizingMaskIntoConstraints="NO" id="5Z0-P8-R5J">
-                                <rect key="frame" x="133" y="75" width="158.5" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="0Dq-M2-SJ5"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2020-06-18 at 11.01.13 PM" translatesAutoresizingMaskIntoConstraints="NO" id="u2n-bJ-dma">
+                                <rect key="frame" x="-93" y="-72" width="600" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IE5-aK-vPs">
-                                <rect key="frame" x="190" y="233" width="45" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IE5-aK-vPs">
+                                <rect key="frame" x="150" y="376" width="115" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -144,6 +143,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="RBA-49-7A3"/>
                                 </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="ellipsis" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24"/>
                                 </state>
@@ -152,39 +152,48 @@
                                     <segue destination="ilf-mX-ipP" kind="show" id="T00-zw-fgv"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rwn-VK-qod">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rwn-VK-qod">
                                 <rect key="frame" x="0.0" y="429" width="414" height="384"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Past Transcripts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwt-bR-cFy">
-                                <rect key="frame" x="146" y="400" width="132.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqd-pp-Odq">
+                                <rect key="frame" x="20" y="62" width="124" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Hy-2K-PUm">
+                                <rect key="frame" x="0.0" y="127" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="About" image="person.crop.circle.fill" catalog="system" badgeValue="sdf" selectedImage="person.crop.circle.fill" id="Xpd-cH-dl4">
+                                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="Call Transcripts" image="doc.text" catalog="system" id="IIF-aK-vmX"/>
+                                </items>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tabBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aqK-h5-rzu">
+                                <rect key="frame" x="54" y="196" width="307" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="5Z0-P8-R5J" firstAttribute="centerX" secondItem="IE5-aK-vPs" secondAttribute="centerX" id="2LI-wa-y7f"/>
-                            <constraint firstItem="nwt-bR-cFy" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="146" id="6C6-xK-AJh"/>
-                            <constraint firstItem="nwt-bR-cFy" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="400" id="FS2-Xt-Dnw"/>
-                            <constraint firstItem="5Z0-P8-R5J" firstAttribute="centerX" secondItem="nwt-bR-cFy" secondAttribute="centerX" id="Gk5-yu-Kgm"/>
                             <constraint firstItem="l8d-G1-ecl" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="OFt-3u-qba"/>
                             <constraint firstItem="rwn-VK-qod" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="RrW-ZL-bYY"/>
-                            <constraint firstItem="IE5-aK-vPs" firstAttribute="top" secondItem="5Z0-P8-R5J" secondAttribute="bottom" constant="8" id="Tli-lL-OFE"/>
-                            <constraint firstItem="l8d-G1-ecl" firstAttribute="leading" secondItem="5Z0-P8-R5J" secondAttribute="trailing" constant="76" id="bgc-rF-G8t"/>
                             <constraint firstItem="l8d-G1-ecl" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="hVp-np-86X"/>
-                            <constraint firstItem="5Z0-P8-R5J" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="133" id="jf1-9s-KZc"/>
                             <constraint firstItem="rwn-VK-qod" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="oCQ-kv-2Ib"/>
-                            <constraint firstItem="rwn-VK-qod" firstAttribute="top" secondItem="nwt-bR-cFy" secondAttribute="bottom" constant="8" id="pCu-an-qML"/>
-                            <constraint firstItem="5Z0-P8-R5J" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="31" id="sPR-fq-oaF"/>
                             <constraint firstItem="rwn-VK-qod" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="xum-x1-uk0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="profileImage" destination="5Z0-P8-R5J" id="KbH-HN-ZdR"/>
+                        <outlet property="profile" destination="aqK-h5-rzu" id="jVy-lr-gha"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -238,8 +247,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Screen Shot 2020-06-18 at 11.01.13 PM" width="1080" height="502"/>
+        <image name="doc.text" catalog="system" width="115" height="128"/>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="pfp" width="920" height="706"/>
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>

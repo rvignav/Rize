@@ -9,16 +9,12 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
-    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var profile: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.profileImage.layer.cornerRadius = self.profileImage.frame.size.width / 2;
-        self.profileImage.clipsToBounds = true;
-        
-        self.profileImage.layer.cornerRadius = self.profileImage.frame.size.width / 2;
-        self.profileImage.clipsToBounds = true;
+        self.profile.layer.cornerRadius = 25
 
     }
     
