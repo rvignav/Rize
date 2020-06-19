@@ -9,9 +9,10 @@
 import UIKit
 
 class DashboardViewController: UIViewController {
-    @IBOutlet weak var host: UIButton!
-    @IBOutlet weak var schedule: UIButton!
     
+    @IBOutlet weak var host: UIButton!
+    
+    @IBOutlet weak var schedule: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.host.layer.cornerRadius = 25
