@@ -21,6 +21,7 @@ class ThirdViewController: UIViewController {
         // Do any additional setup after loading the view.
         initializeAgoraEngine()
         setupLocalVideo()
+        joinChannel()
     }
     
     func initialize AgoraEngine(){
@@ -45,11 +46,25 @@ class ThirdViewController: UIViewController {
             
     }
         
-    @IBAction func didTapHangUp(_ sender: UIButton){
+    func leaveChannel(){
+        agoraKit?.leaveChannel(nil)
+        localView.isHidden = true
+        remoteView.isHidden = true
         
+    }
+        
+    @IBAction func didTapHangUp(_ sender: UIButton){
+        leaveChannel()
     }
 }
 
 extension ViewController: AgoraRtcEngineDelegate {
-    
+    func rtcEngine(_ engine: AgoraRtcEngineKit, firstRemoteVideoDecodedOfUid uid: UInt, size: COSize, elapsed: Int){
+        let videoCanvas = AgoraRtcVideoCanvas()
+        videoCanvas.uid = uid
+        videoCanvas.view = remoteView
+        videoCanvas.renderMode = .hidden
+        
+        agoraKit?.setupRemoteVideo(videoCanvas)
+    }
 }
