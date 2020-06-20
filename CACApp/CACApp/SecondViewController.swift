@@ -22,9 +22,6 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        ConnectButton.backgroundColor = UIColor.init(red: 48/255, green: 177/255, blue: 99/255, alpha: 1)
-        ConnectButton.layer.cornerRadius = 25.0;
-        ConnectButton.tintColor = UIColor.white;
     }
 
 
