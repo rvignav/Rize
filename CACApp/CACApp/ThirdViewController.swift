@@ -20,11 +20,30 @@ class ThirdViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         initializeAgoraEngine()
+        setupLocalVideo()
     }
     
     func initialize AgoraEngine(){
         agoraKit = AgoraRtcEngineKit.sharedEngine(withAppId: "YOUR_APP_ID_HERE", delegate: self)
     {
+        
+    func setupLocalVideo(){
+        agoraKit?.enableVideo()
+        
+        let VideoCanvas = AgoraVideoCanvas()
+        videoCanvas.uid = 0
+        videoCanvas.view = localView
+        videoCanvas.renderMode = .hidden
+        
+        agoraKit?.setupLocalVideo(videoCanvas)
+    }
+        
+        
+    func joinChannel(){
+        agoraKit?.joinChannel(byToken: nil, channelId: "default", info: nil, uid: 0, joinSucess: { (channel, uid, elapsed) in print("Successfully joined channel \(channel)")
+        })
+            
+    }
         
     @IBAction func didTapHangUp(_ sender: UIButton){
         
