@@ -17,6 +17,10 @@
 		C9692E52249AEAAB00569CF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9692E50249AEAAB00569CF1 /* Main.storyboard */; };
 		C9692E54249AEAB000569CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9692E53249AEAB000569CF1 /* Assets.xcassets */; };
 		C9692E57249AEAB000569CF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9692E55249AEAB000569CF1 /* LaunchScreen.storyboard */; };
+		C96B3F08249DCCB000F4408F /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96B3F07249DCCB000F4408F /* Onboarding.storyboard */; };
+		C96B3F0A249DCF2200F4408F /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B3F09249DCF2200F4408F /* NotificationViewController.swift */; };
+		C96B3F0C249DCF3000F4408F /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B3F0B249DCF3000F4408F /* LocationViewController.swift */; };
+		C96B3F0E249DCF3E00F4408F /* ReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B3F0D249DCF3E00F4408F /* ReadyViewController.swift */; };
 		C9B3672E249C7AAD005C1C3F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B3672D249C7AAD005C1C3F /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +38,10 @@
 		C9692E53249AEAB000569CF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9692E56249AEAB000569CF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9692E58249AEAB000569CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96B3F07249DCCB000F4408F /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		C96B3F09249DCF2200F4408F /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		C96B3F0B249DCF3000F4408F /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		C96B3F0D249DCF3E00F4408F /* ReadyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyViewController.swift; sourceTree = "<group>"; };
 		C9B3672D249C7AAD005C1C3F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E2017CD6365B58A2D460419C /* Pods_CACApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CACApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -93,6 +101,10 @@
 				C9692E4C249AEAAB00569CF1 /* FirstViewController.swift */,
 				C9692E4E249AEAAB00569CF1 /* SecondViewController.swift */,
 				C9692E50249AEAAB00569CF1 /* Main.storyboard */,
+				C96B3F07249DCCB000F4408F /* Onboarding.storyboard */,
+				C96B3F09249DCF2200F4408F /* NotificationViewController.swift */,
+				C96B3F0B249DCF3000F4408F /* LocationViewController.swift */,
+				C96B3F0D249DCF3E00F4408F /* ReadyViewController.swift */,
 				C9692E53249AEAB000569CF1 /* Assets.xcassets */,
 				C9692E55249AEAB000569CF1 /* LaunchScreen.storyboard */,
 				C9692E58249AEAB000569CF1 /* Info.plist */,
@@ -164,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9692E57249AEAB000569CF1 /* LaunchScreen.storyboard in Resources */,
+				C96B3F08249DCCB000F4408F /* Onboarding.storyboard in Resources */,
 				A3B22735249AF58B0043FE44 /* GoogleService-Info.plist in Resources */,
 				C9692E54249AEAB000569CF1 /* Assets.xcassets in Resources */,
 				C9692E52249AEAAB00569CF1 /* Main.storyboard in Resources */,
@@ -222,9 +235,12 @@
 				C9B3672E249C7AAD005C1C3F /* ProfileViewController.swift in Sources */,
 				C9692E4F249AEAAB00569CF1 /* SecondViewController.swift in Sources */,
 				C9692E4D249AEAAB00569CF1 /* FirstViewController.swift in Sources */,
+				C96B3F0A249DCF2200F4408F /* NotificationViewController.swift in Sources */,
+				C96B3F0E249DCF3E00F4408F /* ReadyViewController.swift in Sources */,
 				C908A367249C186E0099F89C /* DashboardViewController.swift in Sources */,
 				C9692E49249AEAAB00569CF1 /* AppDelegate.swift in Sources */,
 				C9692E4B249AEAAB00569CF1 /* SceneDelegate.swift in Sources */,
+				C96B3F0C249DCF3000F4408F /* LocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
