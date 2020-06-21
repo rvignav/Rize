@@ -13,6 +13,7 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Profile"
         
         self.profile.layer.cornerRadius = 25
 

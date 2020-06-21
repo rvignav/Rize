@@ -1,34 +1,22 @@
 //
-//  DashboardViewController.swift
+//  UploadViewController.swift
 //  CACApp
 //
-//  Created by Ayaan Haque on 6/18/20.
+//  Created by Vignav Ramesh on 6/20/20.
 //  Copyright © 2020 Ayaan Haque. All rights reserved.
 //
 
 import UIKit
 
-class DashboardViewController: UIViewController {
-    
-    @IBOutlet weak var host: UIButton!
-    
-    @IBOutlet weak var schedule: UIButton!
+class UploadViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Home"
-        self.host.layer.cornerRadius = 25
-        self.schedule.layer.cornerRadius = 25
-        
-
+        title = "Upload Profile Picture"
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func schedule(_ sender: Any) {
-    }
-    
-    @IBAction func new(_ sender: Any) {
-        
-    }
+
     /*
     // MARK: - Navigation
 
