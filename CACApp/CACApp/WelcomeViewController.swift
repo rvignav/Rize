@@ -11,6 +11,7 @@ import UIKit
 class WelcomeViewController: UIViewController {
     
     @IBOutlet var holderView: UIView!
+    let scrollView = UIScrollView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +21,11 @@ class WelcomeViewController: UIViewController {
     
     override func  viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        configure()
     }
     
     private func configure(){
-        let scrollView = UIScrollView(frame: holderView.bounds)
+        scrollView.frame = holderView.bounds
         holderView.addSubview(scrollView)
         
         let titles  = ["Welcome", "Location", "All Set"]
@@ -42,9 +44,36 @@ class WelcomeViewController: UIViewController {
             label.text = titles[x]
             
             imageView.contentMode = .scaleAspectFit
+            imageView.image = UIImage(named: "welcome")
+            pageView.addSubview(imageView)
             
+            button.setTitleColor(.white, for: .normal)
+            button.backgroundColor = .black
+            button.setTitle("Continue", for: .normal)
+            if x == 2{
+                button.setTitle("Get Started", for: .normal)
+            }
+            button.addTarget(self, action: #selector(didTapbutton(_:)), for: .touchUpInside)
+            button.tag = x+1
+            pageView.addSubview(button)
         }
         
+        scrollView.contentSize = CGSize(width: holderView.frame.size.width * 3, height: 0)
+        scrollView.isPagingEnabled = true
+        
+    }
+    
+    @objc func didTapbutton(_ button: UIButton){
+        guard button.tag < 3 else{
+            
+            Core.shared.setIsNotNewUser()
+            
+            dismiss(animated: true, completion: nil)
+            
+            return
+        }
+        
+        scrollView.setContentOffset(CGPoint(x: holderView.frame.size.width * CGFloat(button.tag), y: 0), animated: true)
     }
     
     
