@@ -25,7 +25,7 @@ class ThirdViewController: UIViewController {
     }
     
     func initialize AgoraEngine(){
-        agoraKit = AgoraRtcEngineKit.sharedEngine(withAppId: "YOUR_APP_ID_HERE", delegate: self)
+        agoraKit = AgoraRtcEngineKit.sharedEngine(withAppId: "d84a5ace7a174145887a9878067c2e7f", delegate: self)
     {
         
     func setupLocalVideo(){
