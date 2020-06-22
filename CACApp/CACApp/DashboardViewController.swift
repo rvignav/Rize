@@ -26,8 +26,9 @@ class DashboardViewController: UIViewController {
         super.viewDidLayoutSubviews()
         if Core.shared.isNewUser() {
             // show onboarding
-            
-            
+            let vc = storyboard?.instantiateViewController(identifier: "welcome") as! WelcomeViewController
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true)
             
         }
     }
