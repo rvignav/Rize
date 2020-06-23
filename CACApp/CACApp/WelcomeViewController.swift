@@ -31,10 +31,10 @@ class WelcomeViewController: UIViewController {
         
         let titles  = ["Welcome to Rize.", "Help doctors help you.", "Remember the key points from every appointment.", "All your video calls will be recorded and analyzed", "We would like to send you notifications", "mantain privacy of patient data and are HIPAA compliant"]
         
-        pageControl.numberOfPages = 6
+        pageControl.numberOfPages = titles.count
         
         
-        for x in 0..<5{
+        for x in 0..<titles.count {
             let pageView = UIView(frame: CGRect(x: CGFloat(x) * holderView.frame.size.width , y: 0, width: holderView.frame.size.width, height: holderView.frame.size.height))
                         
             scrollView.addSubview(pageView)
