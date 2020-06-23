@@ -29,7 +29,7 @@ class WelcomeViewController: UIViewController {
         scrollView.frame = holderView.bounds
         holderView.addSubview(scrollView)
         
-        let titles  = ["Welcome to Rize.", "Help doctors help you.", "Remember the key points from every appointment.", "a", "b", "mantain privacy of patient data and are HIPAA compliant"]
+        let titles  = ["Welcome to Rize.", "Help doctors help you.", "Remember the key points from every appointment.", "All your video calls will be recorded and analyzed", "We would like to send you notifications", "mantain privacy of patient data and are HIPAA compliant"]
         
         pageControl.numberOfPages = 6
         
