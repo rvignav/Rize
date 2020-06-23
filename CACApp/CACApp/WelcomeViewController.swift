@@ -29,12 +29,12 @@ class WelcomeViewController: UIViewController {
         scrollView.frame = holderView.bounds
         holderView.addSubview(scrollView)
         
-        let titles  = ["Welcome to Rize.", "Help doctors help you.", "Remember the key points from every appointment."]
+        let titles  = ["Welcome to Rize.", "Help doctors help you.", "Remember the key points from every appointment.", "a", "b", "mantain privacy of patient data and are HIPAA compliant"]
         
-        pageControl.numberOfPages = 3
+        pageControl.numberOfPages = 6
         
         
-        for x in 0..<3{
+        for x in 0..<5{
             let pageView = UIView(frame: CGRect(x: CGFloat(x) * holderView.frame.size.width , y: 0, width: holderView.frame.size.width, height: holderView.frame.size.height))
                         
             scrollView.addSubview(pageView)
@@ -55,7 +55,7 @@ class WelcomeViewController: UIViewController {
             button.setTitleColor(.white, for: .normal)
             button.backgroundColor = .black
             button.setTitle("Continue", for: .normal)
-            if x == 2{
+            if x == 5{
                 button.setTitle("Get Started", for: .normal)
             }
             button.addTarget(self, action: #selector(didTapbutton(_:)), for: .touchUpInside)
@@ -63,13 +63,13 @@ class WelcomeViewController: UIViewController {
             pageView.addSubview(button)
         }
         
-        scrollView.contentSize = CGSize(width: holderView.frame.size.width * 3, height: 0)
+        scrollView.contentSize = CGSize(width: holderView.frame.size.width * 6, height: 0)
         scrollView.isPagingEnabled = true
         
     }
     
     @objc func didTapbutton(_ button: UIButton){
-        guard button.tag < 3 else{
+        guard button.tag < 5 else{
             
             Core.shared.setIsNotNewUser()
             
@@ -82,7 +82,7 @@ class WelcomeViewController: UIViewController {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView){
-        let page = scrollView.contentOffset.x / scrollView.frame.size.width
+        let page = scrollView.contentSize.width / scrollView.frame.size.width
         
         pageControl.currentPage = Int(page)
     }
