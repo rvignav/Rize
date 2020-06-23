@@ -22,8 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B10EB46B9DC34ACFFDB315A /* Pods-CACApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CACApp.release.xcconfig"; path = "Target Support Files/Pods-CACApp/Pods-CACApp.release.xcconfig"; sourceTree = "<group>"; };
-		3038FAB91AF3CBDE913A37AB /* Pods-CACApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CACApp.debug.xcconfig"; path = "Target Support Files/Pods-CACApp/Pods-CACApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2BC13552E19F4B6D8146BABB /* Pods-CACApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CACApp.release.xcconfig"; path = "Target Support Files/Pods-CACApp/Pods-CACApp.release.xcconfig"; sourceTree = "<group>"; };
+		2D61313B3712FCCAB54DE5E9 /* Pods-CACApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CACApp.debug.xcconfig"; path = "Target Support Files/Pods-CACApp/Pods-CACApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A3B22734249AF58B0043FE44 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C908A366249C186E0099F89C /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		C9688EEA24A1178F00D550AA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -60,12 +60,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		33DDAC46360CC8E65F18A97F /* Pods */ = {
+		ADF2FFF9D3913536C1EBDF0C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3038FAB91AF3CBDE913A37AB /* Pods-CACApp.debug.xcconfig */,
-				2B10EB46B9DC34ACFFDB315A /* Pods-CACApp.release.xcconfig */,
+				2D61313B3712FCCAB54DE5E9 /* Pods-CACApp.debug.xcconfig */,
+				2BC13552E19F4B6D8146BABB /* Pods-CACApp.release.xcconfig */,
 			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -74,8 +75,8 @@
 			children = (
 				C9692E47249AEAAB00569CF1 /* CACApp */,
 				C9692E46249AEAAB00569CF1 /* Products */,
-				33DDAC46360CC8E65F18A97F /* Pods */,
 				101B8BE20BFC4E14FC0DB6EF /* Frameworks */,
+				ADF2FFF9D3913536C1EBDF0C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -370,7 +371,7 @@
 		};
 		C9692E5C249AEAB000569CF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3038FAB91AF3CBDE913A37AB /* Pods-CACApp.debug.xcconfig */;
+			baseConfigurationReference = 2D61313B3712FCCAB54DE5E9 /* Pods-CACApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -390,7 +391,7 @@
 		};
 		C9692E5D249AEAB000569CF1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B10EB46B9DC34ACFFDB315A /* Pods-CACApp.release.xcconfig */;
+			baseConfigurationReference = 2BC13552E19F4B6D8146BABB /* Pods-CACApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
