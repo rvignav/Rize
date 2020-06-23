@@ -10,4 +10,5 @@ target 'CACApp' do
   pod 'Firebase/Database'
   pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
+  pod 'AgoraRtcEngine_iOS'
 end
