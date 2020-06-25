@@ -1,5 +1,5 @@
-# CongressionalAppChallenge
-Source code for submission to the Congressional App Challenge 2020.
+# Rize
+Source code for the next-gen telehealth platform Rize. Submission code for the Congressional App Challenge 2020.
 
 First install dependencies via
 
