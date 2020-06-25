@@ -16,7 +16,7 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var pageControl: UIPageControl!
     let scrollView = UIScrollView()
     
-    let titles  = ["Welcome to", "Help doctors help you.", "Remember the key points from every appointment.", "All your video calls will be automatically analyzed.", "Rize mantains privacy of patient data and is HIPAA compliant.", "Rize would like to send you notifications."]
+    let titles  = ["Welcome to", "Help doctors help you.", "Remember the key points from every appointment.", "Real-time, automatic analyses on every call.", "Rize mantains privacy of patient data and is HIPAA compliant.", "Rize would like to send you notifications."]
     let imageTitles = ["welcome", "helpdoctors", "keypoints", "headphones", "hipaa", "notif"]
 
 
