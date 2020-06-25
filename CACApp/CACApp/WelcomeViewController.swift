@@ -40,21 +40,19 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
         scrollView.frame = holderView.bounds
         holderView.addSubview(scrollView)
         pageControl.numberOfPages = titles.count
-        pageControl.currentPageIndicatorTintColor = UIColor.blue
-        pageControl.pageIndicatorTintColor = UIColor.lightGray
+        pageControl.pageIndicatorTintColor = UIColor(red: 1.00, green: 0.34, blue: 0.33, alpha: 1.00)
+        pageControl.currentPageIndicatorTintColor = UIColor(red: 0.38, green: 0.85, blue: 0.99, alpha: 1.00)
         self.pageControl.currentPage = 0
         self.view.addSubview(pageControl)
 
         scrollView.isPagingEnabled = true
         
-        let center = UNUserNotificationCenter.current()
+        
 
         for x in 0..<titles.count {
-            
-            if x == 4{
-                center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
-                    
-                }
+            if x==4 {
+                let center = UNUserNotificationCenter.current()
+                center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in }
             }
             
             let pageView = UIView(frame: CGRect(x: CGFloat(x) * holderView.frame.size.width , y: 0, width: holderView.frame.size.width, height: holderView.frame.size.height))
@@ -62,7 +60,7 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
             scrollView.addSubview(pageView)
 
             let label = UILabel(frame: CGRect(x: 10, y: 10, width: pageView.frame.size.width-20, height: 400))
-            let imageView = UIImageView(frame: CGRect(x: 10, y: 10+120+10, width: pageView.frame.size.width-40, height: pageView.frame.size.height - 60 - 130 - 15))
+            let imageView = UIImageView(frame: CGRect(x: 25, y: 10+120+10, width: pageView.frame.size.width-60, height: pageView.frame.size.height - 60 - 130 - 15 - 40))
             let button = UIButton(frame: CGRect(x: 10, y: pageView.frame.size.height-150, width: pageView.frame.size.width-20, height: 50))
 
             label.textAlignment = .center
@@ -98,9 +96,7 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
         self.pageControl.numberOfPages = 6
         self.pageControl.currentPage = 0
 //        self.pageControl.tintColor = UIColor.red
-        let red = UIColor(red: 1.00, green: 0.34, blue: 0.33, alpha: 1.00)
-        let blue = UIColor(red: 0.38, green: 0.85, blue: 0.99, alpha: 1.00)
-        
+       
         self.pageControl.pageIndicatorTintColor = UIColor(red: 1.00, green: 0.34, blue: 0.33, alpha: 1.00)
         self.pageControl.currentPageIndicatorTintColor = UIColor(red: 0.38, green: 0.85, blue: 0.99, alpha: 1.00)
         self.view.addSubview(pageControl)
@@ -125,12 +121,18 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
 
         scrollView.setContentOffset(CGPoint(x: holderView.frame.size.width * CGFloat(button.tag), y: 0), animated: true)
         let pageNumber = round(scrollView.contentOffset.x / scrollView.frame.size.width)
-        pageControl.currentPage = Int(pageNumber)
+        
+        var p = Int(pageNumber) + 1
+        if p > 5 {
+            p = 5
+        }
+        pageControl.currentPage = Int(p)
     }
 
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-
+        
         let pageNumber = round(scrollView.contentOffset.x / scrollView.frame.size.width)
+        
         pageControl.currentPage = Int(pageNumber)
     }
     
