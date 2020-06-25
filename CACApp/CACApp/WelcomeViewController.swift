@@ -16,8 +16,8 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var pageControl: UIPageControl!
     let scrollView = UIScrollView()
     
-    let titles  = ["Welcome to", "Help doctors help you.", "Remember the key points from every appointment.", "All your video calls will be automatically analyzed.", "Rize would like to send you notifications.", "Rize mantains privacy of patient data and is HIPAA compliant."]
-    let imageTitles = ["welcome", "helpdoctors", "keypoints", "headphones", "notif", "hipaa"]
+    let titles  = ["Welcome to", "Help doctors help you.", "Remember the key points from every appointment.", "All your video calls will be automatically analyzed.", "Rize mantains privacy of patient data and is HIPAA compliant.", "Rize would like to send you notifications."]
+    let imageTitles = ["welcome", "helpdoctors", "keypoints", "headphones", "hipaa", "notif"]
 
 
     override func viewDidLoad() {
@@ -79,8 +79,6 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
             
             if x == 5{
                 button.setTitle("Get Started", for: .normal)
-                let center = UNUserNotificationCenter.current()
-                center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in }
             }
             button.addTarget(self, action: #selector(didTapbutton(_:)), for: .touchUpInside)
             button.tag = x+1

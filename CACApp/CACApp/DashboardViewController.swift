@@ -14,6 +14,10 @@ class DashboardViewController: UIViewController {
     
     @IBOutlet weak var schedule: UIButton!
     override func viewDidLoad() {
+        
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in }
+        
         super.viewDidLoad()
         self.host.layer.cornerRadius = 25
         self.schedule.layer.cornerRadius = 25
