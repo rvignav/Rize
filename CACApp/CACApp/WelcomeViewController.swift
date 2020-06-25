@@ -10,12 +10,9 @@ import UIKit
 import UserNotifications
 
 class WelcomeViewController: UIViewController, UIScrollViewDelegate {
-//    let scrollView = UIScrollView(frame: CGRect(x:0, y:0, width:320,height: 300))
-//    var colors:[UIColor] = [UIColor.red, UIColor.blue, UIColor.green, UIColor.yellow]
-//    var frame: CGRect = CGRect(x:0, y:0, width:0, height:0)
-//    var pageControl : UIPageControl = UIPageControl(frame: CGRect(x:50,y: 300, width:200, height:50))
 
     @IBOutlet var holderView: UIView!
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var pageControl: UIPageControl!
     let scrollView = UIScrollView()
     
@@ -50,17 +47,13 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
         
 
         for x in 0..<titles.count {
-            if x==4 {
-                let center = UNUserNotificationCenter.current()
-                center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in }
-            }
             
             let pageView = UIView(frame: CGRect(x: CGFloat(x) * holderView.frame.size.width , y: 0, width: holderView.frame.size.width, height: holderView.frame.size.height))
 
             scrollView.addSubview(pageView)
 
             let label = UILabel(frame: CGRect(x: 10, y: 10, width: pageView.frame.size.width-20, height: 400))
-            let imageView = UIImageView(frame: CGRect(x: 25, y: 10+120+10, width: pageView.frame.size.width-60, height: pageView.frame.size.height - 60 - 130 - 15 - 40))
+            let imageView = UIImageView(frame: CGRect(x: (pageView.frame.size.width - (pageView.frame.size.width-60)) / 2.0 , y: 10+120+10, width: pageView.frame.size.width-60, height: pageView.frame.size.height - 60 - 130 - 15 - 40))
             let button = UIButton(frame: CGRect(x: 10, y: pageView.frame.size.height-150, width: pageView.frame.size.width-20, height: 50))
 
             label.textAlignment = .center
@@ -78,8 +71,16 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
             button.setTitleColor(.white, for: .normal)
             button.backgroundColor = .black
             button.setTitle("Continue", for: .normal)
+            
+//            if x == 4 {
+//                let center = UNUserNotificationCenter.current()
+//                center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in }
+//            }
+            
             if x == 5{
                 button.setTitle("Get Started", for: .normal)
+                let center = UNUserNotificationCenter.current()
+                center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in }
             }
             button.addTarget(self, action: #selector(didTapbutton(_:)), for: .touchUpInside)
             button.tag = x+1
