@@ -6,13 +6,18 @@
 //  Copyright © 2020 Ayaan Haque. All rights reserved.
 //
 
+import FSCalendar
 import UIKit
+import DateToolsSwift
 
-class DashboardViewController: UIViewController {
+class DashboardViewController: UIViewController, FSCalendarDelegate, FSCalendarDelegateAppearance {
     
+    @IBOutlet weak var calendar: FSCalendar!
     
     @IBOutlet weak var host: UIButton!
     @IBOutlet weak var schedule: UIButton!
+    
+    let dates = ["2020-06-20", "2020-06-07"]
     
     enum CardState {
         case expanded
@@ -47,6 +52,17 @@ class DashboardViewController: UIViewController {
 
         
         
+    }
+    
+    func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, eventDefaultColorsFor date: Date) -> [UIColor]? {
+
+        let dateFormatter3 = DateFormatter()
+        dateFormatter3.dateFormat = "yyyy-MM-dd"
+        let dateString = dateFormatter3.string(from: date)
+        if self.dates.contains(dateString) {
+            return [UIColor.blue]
+        }
+        return [UIColor.white]
     }
     
     override func viewDidLayoutSubviews() {
