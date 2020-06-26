@@ -10,7 +10,7 @@ import FSCalendar
 import UIKit
 import DateToolsSwift
 
-class DashboardViewController: UIViewController, FSCalendarDelegate, FSCalendarDelegateAppearance {
+class DashboardViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelegateAppearance {
     
     @IBOutlet weak var calendar: FSCalendar!
     
@@ -54,15 +54,20 @@ class DashboardViewController: UIViewController, FSCalendarDelegate, FSCalendarD
         
     }
     
-    func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, eventDefaultColorsFor date: Date) -> [UIColor]? {
-
+    func calendar(_ calendar: FSCalendar, willDisplay cell: FSCalendarCell, for date: Date, at monthPosition: FSCalendarMonthPosition) {
         let dateFormatter3 = DateFormatter()
         dateFormatter3.dateFormat = "yyyy-MM-dd"
         let dateString = dateFormatter3.string(from: date)
-        if self.dates.contains(dateString) {
-            return [UIColor.blue]
+
+        //display events as dots
+        cell.eventIndicator.isHidden = false
+        cell.eventIndicator.color = UIColor.blue
+        
+        print(self.dates)
+
+        if self.dates.contains(dateString){
+            cell.eventIndicator.numberOfEvents = 1
         }
-        return [UIColor.white]
     }
     
     override func viewDidLayoutSubviews() {
