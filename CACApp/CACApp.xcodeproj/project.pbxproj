@@ -12,9 +12,9 @@
 		A38DD1A2249F3273003D724B /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DD1A1249F3273003D724B /* UploadViewController.swift */; };
 		A3B22735249AF58B0043FE44 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3B22734249AF58B0043FE44 /* GoogleService-Info.plist */; };
 		C908A367249C186E0099F89C /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C908A366249C186E0099F89C /* DashboardViewController.swift */; };
-		C9688EEB24A1178F00D550AA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9688EEA24A1178F00D550AA /* WelcomeViewController.swift */; };
 		C952C3FD24A5918600F10CA4 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952C3FB24A5918600F10CA4 /* CardViewController.swift */; };
 		C952C3FE24A5918600F10CA4 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C952C3FC24A5918600F10CA4 /* CardViewController.xib */; };
+		C9688EEB24A1178F00D550AA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9688EEA24A1178F00D550AA /* WelcomeViewController.swift */; };
 		C9692E49249AEAAB00569CF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9692E48249AEAAB00569CF1 /* AppDelegate.swift */; };
 		C9692E4B249AEAAB00569CF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9692E4A249AEAAB00569CF1 /* SceneDelegate.swift */; };
 		C9692E4D249AEAAB00569CF1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9692E4C249AEAAB00569CF1 /* FirstViewController.swift */; };
@@ -26,15 +26,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C9688EEA24A1178F00D550AA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		2B10EB46B9DC34ACFFDB315A /* Pods-CACApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CACApp.release.xcconfig"; path = "Target Support Files/Pods-CACApp/Pods-CACApp.release.xcconfig"; sourceTree = "<group>"; };
-		3038FAB91AF3CBDE913A37AB /* Pods-CACApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CACApp.debug.xcconfig"; path = "Target Support Files/Pods-CACApp/Pods-CACApp.debug.xcconfig"; sourceTree = "<group>"; };
+		31C948822D60544259EE52B8 /* Pods-CACApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CACApp.release.xcconfig"; path = "Target Support Files/Pods-CACApp/Pods-CACApp.release.xcconfig"; sourceTree = "<group>"; };
+		6AC6D716F1D93036B540DC7B /* Pods-CACApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CACApp.debug.xcconfig"; path = "Target Support Files/Pods-CACApp/Pods-CACApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A38DD19F249F300C003D724B /* TranscriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptViewController.swift; sourceTree = "<group>"; };
 		A38DD1A1249F3273003D724B /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		A3B22734249AF58B0043FE44 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C908A366249C186E0099F89C /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		C952C3FB24A5918600F10CA4 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		C952C3FC24A5918600F10CA4 /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
+		C9688EEA24A1178F00D550AA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		C9692E45249AEAAB00569CF1 /* CACApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CACApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9692E48249AEAAB00569CF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9692E4A249AEAAB00569CF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,8 +71,8 @@
 		ADF2FFF9D3913536C1EBDF0C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2D61313B3712FCCAB54DE5E9 /* Pods-CACApp.debug.xcconfig */,
-				2BC13552E19F4B6D8146BABB /* Pods-CACApp.release.xcconfig */,
+				6AC6D716F1D93036B540DC7B /* Pods-CACApp.debug.xcconfig */,
+				31C948822D60544259EE52B8 /* Pods-CACApp.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -387,7 +387,7 @@
 		};
 		C9692E5C249AEAB000569CF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D61313B3712FCCAB54DE5E9 /* Pods-CACApp.debug.xcconfig */;
+			baseConfigurationReference = 6AC6D716F1D93036B540DC7B /* Pods-CACApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -407,7 +407,7 @@
 		};
 		C9692E5D249AEAB000569CF1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BC13552E19F4B6D8146BABB /* Pods-CACApp.release.xcconfig */;
+			baseConfigurationReference = 31C948822D60544259EE52B8 /* Pods-CACApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
