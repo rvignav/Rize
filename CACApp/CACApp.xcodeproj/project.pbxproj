@@ -12,6 +12,8 @@
 		A38DD1A2249F3273003D724B /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DD1A1249F3273003D724B /* UploadViewController.swift */; };
 		A3B22735249AF58B0043FE44 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3B22734249AF58B0043FE44 /* GoogleService-Info.plist */; };
 		C908A367249C186E0099F89C /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C908A366249C186E0099F89C /* DashboardViewController.swift */; };
+		C952C3FD24A5918600F10CA4 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952C3FB24A5918600F10CA4 /* CardViewController.swift */; };
+		C952C3FE24A5918600F10CA4 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C952C3FC24A5918600F10CA4 /* CardViewController.xib */; };
 		C9692E49249AEAAB00569CF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9692E48249AEAAB00569CF1 /* AppDelegate.swift */; };
 		C9692E4B249AEAAB00569CF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9692E4A249AEAAB00569CF1 /* SceneDelegate.swift */; };
 		C9692E4D249AEAAB00569CF1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9692E4C249AEAAB00569CF1 /* FirstViewController.swift */; };
@@ -19,8 +21,6 @@
 		C9692E52249AEAAB00569CF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9692E50249AEAAB00569CF1 /* Main.storyboard */; };
 		C9692E54249AEAB000569CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9692E53249AEAB000569CF1 /* Assets.xcassets */; };
 		C9692E57249AEAB000569CF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9692E55249AEAB000569CF1 /* LaunchScreen.storyboard */; };
-		C973995424A582690092D3A2 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C973995224A582690092D3A2 /* CardViewController.xib */; };
-		C973995524A582690092D3A2 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C973995324A582690092D3A2 /* CardViewController.swift */; };
 		C9B3672E249C7AAD005C1C3F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B3672D249C7AAD005C1C3F /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +31,8 @@
 		A38DD1A1249F3273003D724B /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		A3B22734249AF58B0043FE44 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C908A366249C186E0099F89C /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		C952C3FB24A5918600F10CA4 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		C952C3FC24A5918600F10CA4 /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
 		C9692E45249AEAAB00569CF1 /* CACApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CACApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9692E48249AEAAB00569CF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9692E4A249AEAAB00569CF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,8 +42,6 @@
 		C9692E53249AEAB000569CF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9692E56249AEAB000569CF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9692E58249AEAB000569CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C973995224A582690092D3A2 /* CardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CardViewController.xib; path = ../../../../Downloads/CardViewAnimationStart/CardViewAnimation/CardViewController.xib; sourceTree = "<group>"; };
-		C973995324A582690092D3A2 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardViewController.swift; path = ../../../../Downloads/CardViewAnimationStart/CardViewAnimation/CardViewController.swift; sourceTree = "<group>"; };
 		C9B3672D249C7AAD005C1C3F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E2017CD6365B58A2D460419C /* Pods_CACApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CACApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -105,12 +105,12 @@
 				C9692E53249AEAB000569CF1 /* Assets.xcassets */,
 				C9692E55249AEAB000569CF1 /* LaunchScreen.storyboard */,
 				C9692E58249AEAB000569CF1 /* Info.plist */,
-				C973995324A582690092D3A2 /* CardViewController.swift */,
-				C973995224A582690092D3A2 /* CardViewController.xib */,
 				A3B22734249AF58B0043FE44 /* GoogleService-Info.plist */,
 				C908A366249C186E0099F89C /* DashboardViewController.swift */,
 				C9B3672D249C7AAD005C1C3F /* ProfileViewController.swift */,
 				A38DD1A1249F3273003D724B /* UploadViewController.swift */,
+				C952C3FB24A5918600F10CA4 /* CardViewController.swift */,
+				C952C3FC24A5918600F10CA4 /* CardViewController.xib */,
 			);
 			path = CACApp;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 				C9692E57249AEAB000569CF1 /* LaunchScreen.storyboard in Resources */,
 				A3B22735249AF58B0043FE44 /* GoogleService-Info.plist in Resources */,
 				C9692E54249AEAB000569CF1 /* Assets.xcassets in Resources */,
-				C973995424A582690092D3A2 /* CardViewController.xib in Resources */,
+				C952C3FE24A5918600F10CA4 /* CardViewController.xib in Resources */,
 				C9692E52249AEAAB00569CF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,7 +237,7 @@
 				C9692E4F249AEAAB00569CF1 /* SecondViewController.swift in Sources */,
 				C9692E4D249AEAAB00569CF1 /* FirstViewController.swift in Sources */,
 				C908A367249C186E0099F89C /* DashboardViewController.swift in Sources */,
-				C973995524A582690092D3A2 /* CardViewController.swift in Sources */,
+				C952C3FD24A5918600F10CA4 /* CardViewController.swift in Sources */,
 				C9692E49249AEAAB00569CF1 /* AppDelegate.swift in Sources */,
 				C9692E4B249AEAAB00569CF1 /* SceneDelegate.swift in Sources */,
 				A38DD1A0249F300C003D724B /* TranscriptViewController.swift in Sources */,
