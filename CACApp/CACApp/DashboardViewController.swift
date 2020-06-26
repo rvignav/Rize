@@ -23,7 +23,7 @@ class DashboardViewController: UIViewController {
     var visualEffectView:UIVisualEffectView!
     
     let cardHeight:CGFloat = 600
-    let cardHandleAreaHeight:CGFloat = 65
+    let cardHandleAreaHeight:CGFloat = 120
     
     var cardVisible = false
     var nextState:CardState {
