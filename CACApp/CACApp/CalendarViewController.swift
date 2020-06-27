@@ -48,11 +48,9 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         
         super.viewDidLoad()
         title = "Home"
-//        self.host.layer.cornerRadius = 25
-//        self.schedule.layer.cornerRadius = 25
         setupCard()
 
-        // Do any additional setup after loading the view.
+        
     }
     
     func calendar(_ calendar: FSCalendar, numberOfEventsFor date: Date) -> Int {
@@ -195,12 +193,31 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         }
     }
     
+    @IBAction func host(_ sender: Any) {
+        
+    }
+    
+    
     @IBAction func schedule(_ sender: Any) {
     }
     
-    @IBAction func new(_ sender: Any) {
-        
-    }
 
 }
 
+class Core {
+
+    static let shared = Core()
+
+    func isNewUser() -> Bool {
+
+        return !UserDefaults.standard.bool(forKey: "isNewUser")
+
+    }
+
+    func setIsNotNewUser(){
+
+        UserDefaults.standard.set(true, forKey: "isNewUser")
+
+    }
+
+}
