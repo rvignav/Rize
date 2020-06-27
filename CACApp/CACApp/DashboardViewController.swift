@@ -61,7 +61,6 @@ class DashboardViewController: UIViewController, FSCalendarDelegate, FSCalendarD
 
         //display events as dots
         cell.eventIndicator.isHidden = false
-        cell.eventIndicator.color = UIColor.blue
         
         print(self.dates)
 
