@@ -14,6 +14,9 @@
 		C908A367249C186E0099F89C /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C908A366249C186E0099F89C /* DashboardViewController.swift */; };
 		C952C3FD24A5918600F10CA4 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952C3FB24A5918600F10CA4 /* CardViewController.swift */; };
 		C952C3FE24A5918600F10CA4 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C952C3FC24A5918600F10CA4 /* CardViewController.xib */; };
+		C95EBAF824AAA03100E16188 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95EBAF724AAA03100E16188 /* StartViewController.swift */; };
+		C95EBAFA24AAA0C600E16188 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95EBAF924AAA0C600E16188 /* SignUpViewController.swift */; };
+		C95EBAFC24AAA0D600E16188 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95EBAFB24AAA0D600E16188 /* LoginViewController.swift */; };
 		C9688EEB24A1178F00D550AA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9688EEA24A1178F00D550AA /* WelcomeViewController.swift */; };
 		C9692E49249AEAAB00569CF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9692E48249AEAAB00569CF1 /* AppDelegate.swift */; };
 		C9692E4B249AEAAB00569CF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9692E4A249AEAAB00569CF1 /* SceneDelegate.swift */; };
@@ -34,6 +37,9 @@
 		C908A366249C186E0099F89C /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		C952C3FB24A5918600F10CA4 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		C952C3FC24A5918600F10CA4 /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
+		C95EBAF724AAA03100E16188 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		C95EBAF924AAA0C600E16188 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C95EBAFB24AAA0D600E16188 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C9688EEA24A1178F00D550AA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		C9692E45249AEAAB00569CF1 /* CACApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CACApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9692E48249AEAAB00569CF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +80,6 @@
 				6AC6D716F1D93036B540DC7B /* Pods-CACApp.debug.xcconfig */,
 				31C948822D60544259EE52B8 /* Pods-CACApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -115,6 +120,9 @@
 				A38DD1A1249F3273003D724B /* UploadViewController.swift */,
 				C952C3FB24A5918600F10CA4 /* CardViewController.swift */,
 				C952C3FC24A5918600F10CA4 /* CardViewController.xib */,
+				C95EBAF724AAA03100E16188 /* StartViewController.swift */,
+				C95EBAF924AAA0C600E16188 /* SignUpViewController.swift */,
+				C95EBAFB24AAA0D600E16188 /* LoginViewController.swift */,
 			);
 			path = CACApp;
 			sourceTree = "<group>";
@@ -241,10 +249,13 @@
 				C9692E4F249AEAAB00569CF1 /* SecondViewController.swift in Sources */,
 				C9692E4D249AEAAB00569CF1 /* FirstViewController.swift in Sources */,
 				C908A367249C186E0099F89C /* DashboardViewController.swift in Sources */,
+				C95EBAF824AAA03100E16188 /* StartViewController.swift in Sources */,
+				C95EBAFA24AAA0C600E16188 /* SignUpViewController.swift in Sources */,
 				C952C3FD24A5918600F10CA4 /* CardViewController.swift in Sources */,
 				C9692E49249AEAAB00569CF1 /* AppDelegate.swift in Sources */,
 				C9692E4B249AEAAB00569CF1 /* SceneDelegate.swift in Sources */,
 				C9688EEB24A1178F00D550AA /* WelcomeViewController.swift in Sources */,
+				C95EBAFC24AAA0D600E16188 /* LoginViewController.swift in Sources */,
 				A38DD1A0249F300C003D724B /* TranscriptViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
