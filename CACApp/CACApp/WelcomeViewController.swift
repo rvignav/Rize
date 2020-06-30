@@ -105,11 +105,14 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
     }
     
     @objc func didTapbutton(_ button: UIButton){
-        guard button.tag < 5 else{
+        guard button.tag < 6 else{
 
             Core.shared.setIsNotNewUser()
 
-            dismiss(animated: true, completion: nil)
+//            dismiss(animated: true, completion: nil)
+            let vc = storyboard?.instantiateViewController(identifier: "start" ) as! StartViewController
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true)
 
             return
         }
