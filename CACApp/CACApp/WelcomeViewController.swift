@@ -22,6 +22,9 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in }
 
         configurePageControl()
         configure()
@@ -71,6 +74,7 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
             button.setTitleColor(.white, for: .normal)
             button.backgroundColor = .black
             button.setTitle("Continue", for: .normal)
+            button.layer.cornerRadius = 25
             
             
             if x == 5{

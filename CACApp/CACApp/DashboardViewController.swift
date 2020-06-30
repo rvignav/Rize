@@ -9,6 +9,7 @@
 import FSCalendar
 import UIKit
 import DateToolsSwift
+import FirebaseAuth
 
 class DashboardViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelegateAppearance {
     
@@ -41,8 +42,11 @@ class DashboardViewController: UIViewController, FSCalendarDelegate, FSCalendarD
     
     override func viewDidLoad() {
         
-        let center = UNUserNotificationCenter.current()
-        center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in }
+        if Auth.auth().currentUser == nil {
+           let vc = storyboard?.instantiateViewController(identifier: "start" ) as! StartViewController
+           vc.modalPresentationStyle = .fullScreen
+           present(vc, animated: false)
+        }
         
         super.viewDidLoad()
         title = "Home"
