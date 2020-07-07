@@ -45,9 +45,9 @@ class DashboardViewController: UIViewController, FSCalendarDelegate, FSCalendarD
         center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in }
         
         super.viewDidLoad()
-        title = "Home"
-        self.host.layer.cornerRadius = 25
-        self.schedule.layer.cornerRadius = 25
+//        title = "Home"
+//        self.host.layer.cornerRadius = 25
+//        self.schedule.layer.cornerRadius = 25
         setupCard()
 
         

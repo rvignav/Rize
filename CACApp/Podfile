@@ -12,4 +12,5 @@ target 'CACApp' do
   pod 'Firebase/Firestore'
   pod 'DateToolsSwift'
   pod 'FSCalendar'
+  pod "RESegmentedControl"
 end
