@@ -67,6 +67,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="new:" destination="9pv-A4-QxB" eventType="touchUpInside" id="fqR-GD-99v"/>
+                                    <segue destination="w9B-gw-3PA" kind="show" id="yzY-3g-4or"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTr-C1-fyu">
@@ -126,6 +127,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1659.4202898550725" y="-320.08928571428572"/>
+        </scene>
+        <!--Host View Controller-->
+        <scene sceneID="y1u-oM-Ak0">
+            <objects>
+                <viewController id="w9B-gw-3PA" customClass="HostViewController" customModule="CACApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EoU-ic-9bO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="CmE-NH-XxK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zcH-er-3jJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OCQ-qc-Fks" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2400" y="-320"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="wg7-f3-ORb">
@@ -302,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nHv-v2-KtR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2541" y="-320"/>
+            <point key="canvasLocation" x="3304" y="-332"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2sT-K2-1O4">
