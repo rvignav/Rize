@@ -9,7 +9,7 @@
 import UIKit
 import AgoraRtcEngineKit
 
-class ThirdViewController: UIViewController {
+class ThirdViewController: UIViewController{
     
     @IBOutlet weak var remoteView: UIView!
     @IBOutlet weak var localView: UIView!
@@ -24,9 +24,9 @@ class ThirdViewController: UIViewController {
         joinChannel()
     }
     
-    func initialize AgoraEngine(){
+    func initializeAgoraEngine(){
         agoraKit = AgoraRtcEngineKit.sharedEngine(withAppId: "d84a5ace7a174145887a9878067c2e7f", delegate: self)
-    {
+    }
         
     func setupLocalVideo(){
         agoraKit?.enableVideo()
@@ -64,7 +64,7 @@ extension ViewController: AgoraRtcEngineDelegate {
         videoCanvas.uid = uid
         videoCanvas.view = remoteView
         videoCanvas.renderMode = .hidden
-        
+            
         agoraKit?.setupRemoteVideo(videoCanvas)
     }
 }
