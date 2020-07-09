@@ -44,9 +44,9 @@ class ProfileViewController: UIViewController {
     
     @IBAction func editProfile(_ sender: Any) {
         
-        let vc = storyboard?.instantiateViewController(identifier: "editProfile" ) as! EditProfileViewController
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+//        let vc = storyboard?.instantiateViewController(identifier: "editProfile" ) as! EditProfileViewController
+//        vc.modalPresentationStyle = .fullScreen
+//        present(vc, animated: true)
         
     }
     
