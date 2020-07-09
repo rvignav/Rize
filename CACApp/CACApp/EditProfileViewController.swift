@@ -33,6 +33,9 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
         doctorField.inputAccessoryView = toolbar
         symptomsField.inputAccessoryView = toolbar
         conditionsField.inputAccessoryView = toolbar
+        
+        self.profileImage.layer.cornerRadius = self.profileImage.frame.size.width / 2;
+        self.profileImage.clipsToBounds = true;
 
 
     }
