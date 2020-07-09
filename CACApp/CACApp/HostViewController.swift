@@ -9,7 +9,7 @@
 import UIKit
 import SparkSDK
 
-class HostViewController: UIViewController, SparkMediaViewDelegate {
+class HostViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
