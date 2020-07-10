@@ -9,8 +9,10 @@
 import UIKit
 import FirebaseAuth
 
-class SignUpViewController: UIViewController {
-
+class SignUpViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+    @IBOutlet weak var profileImage: UIImageView!
+    
+    @IBOutlet weak var name: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var passwordConfirm: UITextField!
@@ -23,6 +25,7 @@ class SignUpViewController: UIViewController {
         let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(self.doneClicked))
         toolbar.setItems([doneButton], animated: false)
         
+        name.inputAccessoryView = toolbar
         email.inputAccessoryView = toolbar
         password.inputAccessoryView = toolbar
         passwordConfirm.inputAccessoryView = toolbar
@@ -45,9 +48,7 @@ class SignUpViewController: UIViewController {
         else{
         Auth.auth().createUser(withEmail: email.text!, password: password.text!){ (user, error) in
          if error == nil {
-            let vc = self.storyboard?.instantiateViewController(identifier: "dashboard" ) as! DashboardViewController
-           vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true)
+            self.performSegue(withIdentifier: "continue", sender: nil)
                         } 
          else{
            let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
@@ -61,10 +62,44 @@ class SignUpViewController: UIViewController {
     }
     
     
-    @IBAction func back(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "start" ) as! StartViewController
-        vc.modalPresentationStyle = .fullScreen
-         self.present(vc, animated: true)
+    @IBAction func uploadButton(_ sender: Any) {
+        
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            var imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .photoLibrary;
+            imagePicker.allowsEditing = true
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+        
     }
+    
+    @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+
+        var selectedImageFromPicker: UIImage?
+        if let editedImage = info[UIImagePickerController.InfoKey.editedImage.rawValue] as? UIImage {
+            selectedImageFromPicker = editedImage
+        } else if let originalImage = info[UIImagePickerController.InfoKey.originalImage.rawValue] as? UIImage {
+            selectedImageFromPicker = originalImage
+        }
+        
+        dismiss(animated: true, completion: nil)
+        
+        if let selectedImage = selectedImageFromPicker {
+            profileImage.image = selectedImage
+
+        }
+        
+    }
+    
+    private func configureTapGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func handleTap() {
+        view.endEditing(true)
+    }
+    
     
 }

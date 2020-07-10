@@ -24,6 +24,7 @@
 		C9692E52249AEAAB00569CF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9692E50249AEAAB00569CF1 /* Main.storyboard */; };
 		C9692E54249AEAB000569CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9692E53249AEAB000569CF1 /* Assets.xcassets */; };
 		C9692E57249AEAB000569CF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9692E55249AEAB000569CF1 /* LaunchScreen.storyboard */; };
+		C96B05CF24B8164500C16839 /* SignUp2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B05CE24B8164500C16839 /* SignUp2ViewController.swift */; };
 		C9A7A90724B7899400FDB153 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7A90624B7899400FDB153 /* EditProfileViewController.swift */; };
 		C9B3672E249C7AAD005C1C3F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B3672D249C7AAD005C1C3F /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +50,7 @@
 		C9692E53249AEAB000569CF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9692E56249AEAB000569CF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9692E58249AEAB000569CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96B05CE24B8164500C16839 /* SignUp2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp2ViewController.swift; sourceTree = "<group>"; };
 		C9A7A90624B7899400FDB153 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		C9B3672D249C7AAD005C1C3F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E2017CD6365B58A2D460419C /* Pods_CACApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CACApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +125,7 @@
 				C95EBAF924AAA0C600E16188 /* SignUpViewController.swift */,
 				C95EBAFB24AAA0D600E16188 /* LoginViewController.swift */,
 				C9A7A90624B7899400FDB153 /* EditProfileViewController.swift */,
+				C96B05CE24B8164500C16839 /* SignUp2ViewController.swift */,
 			);
 			path = CACApp;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				A38DD1A2249F3273003D724B /* UploadViewController.swift in Sources */,
 				C9692E4F249AEAAB00569CF1 /* SecondViewController.swift in Sources */,
 				C9692E4D249AEAAB00569CF1 /* FirstViewController.swift in Sources */,
+				C96B05CF24B8164500C16839 /* SignUp2ViewController.swift in Sources */,
 				C908A367249C186E0099F89C /* DashboardViewController.swift in Sources */,
 				C95EBAF824AAA03100E16188 /* StartViewController.swift in Sources */,
 				C95EBAFA24AAA0C600E16188 /* SignUpViewController.swift in Sources */,
