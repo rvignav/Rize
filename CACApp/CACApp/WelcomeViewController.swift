@@ -7,6 +7,7 @@
 
 import UIKit
 import UserNotifications
+import FirebaseAuth
 
 class WelcomeViewController: UIViewController, UIScrollViewDelegate {
 
@@ -112,7 +113,20 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
 
             Core.shared.setIsNotNewUser()
 
-//            dismiss(animated: true, completion: nil)
+            
+//            if Auth.auth().currentUser != nil {
+//              let vc = self.storyboard?.instantiateViewController(identifier: "tabBar" ) as! TabBarController
+//              vc.modalPresentationStyle = .fullScreen
+//              present(vc, animated: true, completion: nil)
+//
+//               dismiss(animated: true, completion: nil)
+//            }
+//            else {
+//                let vc = self.storyboard?.instantiateViewController(identifier: "startNav" ) as! StartNavController
+//                vc.modalPresentationStyle = .fullScreen
+//                present(vc, animated: true, completion: nil)
+//            }
+            
             let vc = self.storyboard?.instantiateViewController(identifier: "startNav" ) as! StartNavController
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true, completion: nil)

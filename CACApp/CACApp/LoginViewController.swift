@@ -24,7 +24,6 @@ class LoginViewController: UIViewController {
         email.inputAccessoryView = toolbar
         password.inputAccessoryView = toolbar
 
-        // Do any additional setup after loading the view.
     }
     
     @objc func doneClicked() {
@@ -34,9 +33,9 @@ class LoginViewController: UIViewController {
     @IBAction func loginAction(_ sender: Any) {
         Auth.auth().signIn(withEmail: email.text!, password: password.text!) { (user, error) in
            if error == nil{
-             let vc = self.storyboard?.instantiateViewController(identifier: "dashboard" ) as! DashboardViewController
+             let vc = self.storyboard?.instantiateViewController(identifier: "tabBar" ) as! TabBarController
              vc.modalPresentationStyle = .fullScreen
-              self.present(vc, animated: true)
+            self.present(vc, animated: true, completion: nil)
                           }
             else{
              let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
@@ -47,12 +46,6 @@ class LoginViewController: UIViewController {
                  }
         }
     }
-    
-    
-    @IBAction func back(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "start" ) as! StartViewController
-        vc.modalPresentationStyle = .fullScreen
-         self.present(vc, animated: true)
-    }
+
     
 }
