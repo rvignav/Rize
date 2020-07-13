@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="4389.855072463768" y="-320.08928571428572"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Profile-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController storyboardIdentifier="profile" id="8rJ-Kc-sve" customClass="ProfileViewController" customModule="CACApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profile" title="Profile" id="8rJ-Kc-sve" customClass="ProfileViewController" customModule="CACApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tau-cz-9hU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -322,7 +322,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Symptoms" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xsA-Qc-MhZ">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="headaches, wheezing, etc." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xsA-Qc-MhZ">
                                         <rect key="frame" x="20" y="282" width="334" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -333,7 +333,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pre-Existing Conditions" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P2m-jf-yPN">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="arthritis, lumbar fracture, etc." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P2m-jf-yPN">
                                         <rect key="frame" x="20" y="364.5" width="334" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -440,7 +440,7 @@
             </objects>
             <point key="canvasLocation" x="-4091" y="0.0"/>
         </scene>
-        <!--Login-->
+        <!--Rize-->
         <scene sceneID="6jw-iQ-oFt">
             <objects>
                 <viewController storyboardIdentifier="start" id="9ff-E9-YX4" customClass="StartViewController" customModule="CACApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -505,7 +505,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0la-CJ-eap"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Login" id="1xs-wm-faS"/>
+                    <navigationItem key="navigationItem" title="Rize" id="1xs-wm-faS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sFI-zp-YxX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -878,7 +878,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Symptoms" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ohQ-Dg-Zh1">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="headaches, wheezing, etc." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ohQ-Dg-Zh1">
                                         <rect key="frame" x="20" y="179.5" width="334" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -889,7 +889,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pre-Existing Conditions" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p6F-ad-4gg">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="arthritis, lumbar fracture, etc." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p6F-ad-4gg">
                                         <rect key="frame" x="20" y="254" width="334" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
