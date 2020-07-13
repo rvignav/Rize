@@ -39,15 +39,7 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
 
 
     }
-    
-    @IBAction func back(_ sender: Any) {
-        
-        let vc = self.storyboard?.instantiateViewController(identifier: "profile" ) as! ProfileViewController
-        vc.modalPresentationStyle = .fullScreen
-         self.present(vc, animated: true)
-        
-    }
-    
+
     
     
     @IBAction func uploadPicture(_ sender: Any) {

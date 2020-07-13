@@ -23,9 +23,15 @@ class SignUp2ViewController: UIViewController {
     
     @IBAction func signUpPressed(_ sender: Any) {
         
-        let vc = storyboard?.instantiateViewController(identifier: "dashboard" ) as! DashboardViewController
-         vc.modalPresentationStyle = .fullScreen
-         present(vc, animated: true)
+        navigateToMainInterface()
+        
+    }
+    
+    private func navigateToMainInterface(){
+        
+        let vc = self.storyboard?.instantiateViewController(identifier: "dashboardNav" ) as! DashboardNavController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
         
     }
     

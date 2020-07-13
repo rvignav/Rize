@@ -114,9 +114,9 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
             Core.shared.setIsNotNewUser()
 
 //            dismiss(animated: true, completion: nil)
-            let vc = storyboard?.instantiateViewController(identifier: "start" ) as! StartViewController
+            let vc = self.storyboard?.instantiateViewController(identifier: "startNav" ) as! StartNavController
             vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true)
+            present(vc, animated: true, completion: nil)
 
             return
         }

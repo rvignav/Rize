@@ -13,11 +13,11 @@ class StartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if Auth.auth().currentUser != nil {
-          let vc = storyboard?.instantiateViewController(identifier: "dashboard" ) as! DashboardViewController
-           vc.modalPresentationStyle = .fullScreen
-           present(vc, animated: true)
-        }
+//        if Auth.auth().currentUser != nil {
+//          let vc = storyboard?.instantiateViewController(identifier: "dashboard" ) as! DashboardViewController
+//           vc.modalPresentationStyle = .fullScreen
+//           present(vc, animated: true)
+//        }
         // Do any additional setup after loading the view.
     }
     @IBAction func loginPressed(_ sender: Any) {

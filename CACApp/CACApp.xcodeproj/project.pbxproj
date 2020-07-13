@@ -11,6 +11,8 @@
 		A38DD1A2249F3273003D724B /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DD1A1249F3273003D724B /* UploadViewController.swift */; };
 		A3B22735249AF58B0043FE44 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3B22734249AF58B0043FE44 /* GoogleService-Info.plist */; };
 		C908A367249C186E0099F89C /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C908A366249C186E0099F89C /* DashboardViewController.swift */; };
+		C91F146E24BCFC34009A92F5 /* DashboardNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91F146D24BCFC34009A92F5 /* DashboardNavController.swift */; };
+		C91F147024BCFC57009A92F5 /* StartNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91F146F24BCFC57009A92F5 /* StartNavController.swift */; };
 		C952C3FD24A5918600F10CA4 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952C3FB24A5918600F10CA4 /* CardViewController.swift */; };
 		C952C3FE24A5918600F10CA4 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C952C3FC24A5918600F10CA4 /* CardViewController.xib */; };
 		C95EBAF824AAA03100E16188 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95EBAF724AAA03100E16188 /* StartViewController.swift */; };
@@ -35,6 +37,8 @@
 		A38DD1A1249F3273003D724B /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		A3B22734249AF58B0043FE44 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C908A366249C186E0099F89C /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		C91F146D24BCFC34009A92F5 /* DashboardNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardNavController.swift; sourceTree = "<group>"; };
+		C91F146F24BCFC57009A92F5 /* StartNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartNavController.swift; sourceTree = "<group>"; };
 		C952C3FB24A5918600F10CA4 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		C952C3FC24A5918600F10CA4 /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
 		C95EBAF724AAA03100E16188 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 				C95EBAFB24AAA0D600E16188 /* LoginViewController.swift */,
 				C9A7A90624B7899400FDB153 /* EditProfileViewController.swift */,
 				C96B05CE24B8164500C16839 /* SignUp2ViewController.swift */,
+				C91F146D24BCFC34009A92F5 /* DashboardNavController.swift */,
+				C91F146F24BCFC57009A92F5 /* StartNavController.swift */,
 			);
 			path = CACApp;
 			sourceTree = "<group>";
@@ -256,6 +262,8 @@
 				C908A367249C186E0099F89C /* DashboardViewController.swift in Sources */,
 				C95EBAF824AAA03100E16188 /* StartViewController.swift in Sources */,
 				C95EBAFA24AAA0C600E16188 /* SignUpViewController.swift in Sources */,
+				C91F146E24BCFC34009A92F5 /* DashboardNavController.swift in Sources */,
+				C91F147024BCFC57009A92F5 /* StartNavController.swift in Sources */,
 				C952C3FD24A5918600F10CA4 /* CardViewController.swift in Sources */,
 				C9692E49249AEAAB00569CF1 /* AppDelegate.swift in Sources */,
 				C9692E4B249AEAAB00569CF1 /* SceneDelegate.swift in Sources */,
