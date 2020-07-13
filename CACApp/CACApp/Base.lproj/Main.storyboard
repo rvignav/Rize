@@ -632,7 +632,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="signUpAction:" destination="pN1-5d-rdk" eventType="touchUpInside" id="dPg-5l-KaT"/>
-                                    <segue destination="H2y-EE-8PF" kind="show" id="61o-yZ-DqL"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgP-zL-4W7">
@@ -757,6 +756,7 @@
                         <outlet property="password" destination="C8r-pp-vSS" id="29j-Ta-bZi"/>
                         <outlet property="passwordConfirm" destination="Aaa-vB-gqe" id="8t7-gA-ibg"/>
                         <outlet property="profileImage" destination="abQ-Cu-QQF" id="4ew-eC-vzA"/>
+                        <segue destination="H2y-EE-8PF" kind="show" identifier="continue" id="ZaV-Su-uCH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zPf-G8-WPH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
