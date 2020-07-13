@@ -48,7 +48,7 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate & 
         else{
         Auth.auth().createUser(withEmail: email.text!, password: password.text!){ (user, error) in
          if error == nil {
-//            self.performSegue(withIdentifier: "continue", sender: nil)
+            self.performSegue(withIdentifier: "continue", sender: nil)
                         } 
          else{
            let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
