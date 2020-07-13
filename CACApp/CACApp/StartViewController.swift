@@ -21,15 +21,15 @@ class StartViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func loginPressed(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "login" ) as! LoginViewController
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+//        let vc = storyboard?.instantiateViewController(identifier: "login" ) as! LoginViewController
+//        vc.modalPresentationStyle = .fullScreen
+//        present(vc, animated: true)
     }
     
     @IBAction func signUpPressed(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "signUp" ) as! SignUpViewController
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+//        let vc = storyboard?.instantiateViewController(identifier: "signUp" ) as! SignUpViewController
+//        vc.modalPresentationStyle = .fullScreen
+//        present(vc, animated: true)
     }
     
 }
