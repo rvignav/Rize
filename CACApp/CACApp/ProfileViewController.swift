@@ -2,15 +2,15 @@
 //  ProfileViewController.swift
 //  CACApp
 //
-//  Created by Ayaan Haque on 6/18/20.
-//  Copyright © 2020 Ayaan Haque. All rights reserved.
+//  Copyright © 2020 Rize. All rights reserved.
 //
 
 import UIKit
 import FirebaseAuth
 
 class ProfileViewController: UIViewController {
-    @IBOutlet weak var profile: UIImageView!
+    
+    @IBOutlet weak var profileImage: UIImageView!
     
     @IBOutlet weak var profileView: UIView!
     @IBOutlet weak var transcriptView: UIView!
@@ -33,10 +33,19 @@ class ProfileViewController: UIViewController {
         profileView.isHidden = false
         transcriptView.isHidden = true
         
+        self.profileImage.layer.cornerRadius = self.profileImage.frame.size.width / 2;
+        self.profileImage.clipsToBounds = true;
+        
+        // make this pfp the same as the one that was chosen in the edit page
 
     }
+
     
     @IBAction func editProfile(_ sender: Any) {
+        
+//        let vc = storyboard?.instantiateViewController(identifier: "editProfile" ) as! EditProfileViewController
+//        vc.modalPresentationStyle = .fullScreen
+//        present(vc, animated: true)
         
     }
     

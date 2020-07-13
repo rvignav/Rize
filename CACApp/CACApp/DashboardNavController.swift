@@ -1,5 +1,5 @@
 //
-//  UploadViewController.swift
+//  DashboardNavController.swift
 //  CACApp
 //
 //  Copyright © 2020 Rize. All rights reserved.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class UploadViewController: UIViewController {
+class DashboardNavController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Upload Profile Picture"
+
         // Do any additional setup after loading the view.
     }
     

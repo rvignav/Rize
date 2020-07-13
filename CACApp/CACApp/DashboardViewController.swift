@@ -2,8 +2,7 @@
 //  DashboardViewController.swift
 //  CACApp
 //
-//  Created by Ayaan Haque on 6/18/20.
-//  Copyright © 2020 Ayaan Haque. All rights reserved.
+//  Copyright © 2020 Rize. All rights reserved.
 //
 
 import FSCalendar
@@ -211,3 +210,22 @@ class DashboardViewController: UIViewController, FSCalendarDelegate, FSCalendarD
 
     
 }
+
+class Core {
+    
+    static let shared = Core()
+    
+    func isNewUser() -> Bool {
+        
+        return !UserDefaults.standard.bool(forKey: "isNewUser")
+        
+    }
+    
+    func setIsNotNewUser(){
+        
+        UserDefaults.standard.set(true, forKey: "isNewUser")
+        
+    }
+    
+}
+

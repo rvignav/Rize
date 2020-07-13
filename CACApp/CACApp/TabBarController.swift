@@ -1,18 +1,17 @@
 //
-//  TranscriptViewController.swift
+//  TabBarController.swift
 //  CACApp
 //
-//  Created by Vignav Ramesh on 6/20/20.
-//  Copyright © 2020 Ayaan Haque. All rights reserved.
+//  Copyright © 2020 Rize. All rights reserved.
 //
 
 import UIKit
 
-class TranscriptViewController: UIViewController {
+class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Call Transcripts"
+
         // Do any additional setup after loading the view.
     }
     

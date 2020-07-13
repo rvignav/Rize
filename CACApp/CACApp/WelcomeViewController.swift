@@ -2,12 +2,12 @@
 //  WelcomeViewController.swift
 //  CACApp
 //
-//  Created by Ayaan Haque on 6/22/20.
-//  Copyright © 2020 Ayaan Haque. All rights reserved.
+//  Copyright © 2020 Rize. All rights reserved.
 //
 
 import UIKit
 import UserNotifications
+import FirebaseAuth
 
 class WelcomeViewController: UIViewController, UIScrollViewDelegate {
 
@@ -113,10 +113,23 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
 
             Core.shared.setIsNotNewUser()
 
-//            dismiss(animated: true, completion: nil)
-            let vc = storyboard?.instantiateViewController(identifier: "start" ) as! StartViewController
+            
+//            if Auth.auth().currentUser != nil {
+//              let vc = self.storyboard?.instantiateViewController(identifier: "tabBar" ) as! TabBarController
+//              vc.modalPresentationStyle = .fullScreen
+//              present(vc, animated: true, completion: nil)
+//
+//               dismiss(animated: true, completion: nil)
+//            }
+//            else {
+//                let vc = self.storyboard?.instantiateViewController(identifier: "startNav" ) as! StartNavController
+//                vc.modalPresentationStyle = .fullScreen
+//                present(vc, animated: true, completion: nil)
+//            }
+            
+            let vc = self.storyboard?.instantiateViewController(identifier: "startNav" ) as! StartNavController
             vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true)
+            present(vc, animated: true, completion: nil)
 
             return
         }
