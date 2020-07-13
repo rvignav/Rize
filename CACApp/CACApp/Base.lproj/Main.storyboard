@@ -481,7 +481,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="pN1-5d-rdk" kind="show" id="5bv-Gy-Iwa"/>
+                                    <segue destination="pN1-5d-rdk" kind="show" id="sLS-BY-NLR"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome" translatesAutoresizingMaskIntoConstraints="NO" id="OUf-1y-HNC">
@@ -640,24 +640,6 @@
                                     <constraint firstAttribute="height" constant="150" id="wRb-bk-g7V"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSu-9P-YjR">
-                                <rect key="frame" x="156" y="320" width="102" height="40"/>
-                                <color key="backgroundColor" red="0.38431372549999998" green="0.85098039219999999" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="zNh-uU-JJd"/>
-                                </constraints>
-                                <state key="normal" title="Upload Picture">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="uploadButton:" destination="pN1-5d-rdk" eventType="touchUpInside" id="ft9-Mq-xhe"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Sp0-4W-dFp">
                                 <rect key="frame" x="20" y="380" width="374" height="393"/>
                                 <subviews>
@@ -717,6 +699,24 @@
                                     <constraint firstItem="BjJ-fF-jNW" firstAttribute="leading" secondItem="Sp0-4W-dFp" secondAttribute="leading" constant="20" id="kK4-Wf-4d3"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSu-9P-YjR">
+                                <rect key="frame" x="101" y="320" width="212" height="40"/>
+                                <color key="backgroundColor" red="0.38431372549999998" green="0.85098039219999999" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="zNh-uU-JJd"/>
+                                </constraints>
+                                <state key="normal" title="Upload Picture">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="uploadButton:" destination="pN1-5d-rdk" eventType="touchUpInside" id="ft9-Mq-xhe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -749,7 +749,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zPf-G8-WPH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-926" y="682"/>
+            <point key="canvasLocation" x="-926.08695652173924" y="681.69642857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -832,8 +832,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="signUpAction:" destination="H2y-EE-8PF" eventType="touchUpInside" id="xD8-DP-mYy"/>
-                                    <action selector="signUpPressed:" destination="H2y-EE-8PF" eventType="touchUpInside" id="heK-Hy-PLu"/>
+                                    <action selector="signUpPressed:" destination="H2y-EE-8PF" eventType="touchUpInside" id="fCL-JV-qlh"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xkB-a8-IKe">
