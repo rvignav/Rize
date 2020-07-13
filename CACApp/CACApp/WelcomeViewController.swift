@@ -2,8 +2,7 @@
 //  WelcomeViewController.swift
 //  CACApp
 //
-//  Created by Ayaan Haque on 6/22/20.
-//  Copyright © 2020 Ayaan Haque. All rights reserved.
+//  Copyright © 2020 Rize. All rights reserved.
 //
 
 import UIKit
