@@ -13,4 +13,37 @@ target 'CACApp' do
   pod 'Firebase/Firestore'
   pod 'DateToolsSwift'
   pod 'FSCalendar'
+  
+  pod 'Alamofire', '5.0.2'
+  pod 'AppCenter/Distribute', '2.5.3'
+  pod 'Crashlytics', '3.14.0'
+  
+  pod 'IGListDiffKit', '4.0.0'
+  pod 'KeychainAccess', '4.1.0'
+  pod 'TwilioVideo', '~> 3.4'
+  pod 'Nimble'
+  pod 'Quick'
+#
+#  target 'Video-InternalTests' do
+#    pod 'Nimble'
+#    pod 'Quick'
+#
+#    target 'Video-CommunityTests' do
+#      # Identical to Video-InternalTests
+#      pod 'Nimble'
+#      pod 'Quick'
+#    end
+#  end
+#
+#  target 'Video-Community' do
+#    # Identical to Video-Twilio
+#  end
+  
 end
+
+## Don't inherit pods like other targets for good black box testing
+#target 'Video-InternalUITests' do
+#  project 'CACApp/CACApp.xcodeproj'
+#
+#  pod 'Nimble'
+#end
