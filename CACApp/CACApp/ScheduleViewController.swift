@@ -16,6 +16,7 @@ class ScheduleViewController: UINavigationController {
         super.viewDidLoad()
 
         datePicker = UIDatePicker()
+        print(datePicker)
         datePicker?.datePickerMode = .date
         
         datePicker?.addTarget(self, action: #selector(ScheduleViewController.dateChanged(datePicker:)), for: .valueChanged)

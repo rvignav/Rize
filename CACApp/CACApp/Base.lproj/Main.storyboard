@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P7f-6x-xcK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9sm-fH-UKC">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -40,7 +40,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="schedule:" destination="9pv-A4-QxB" eventType="touchUpInside" id="9eg-GE-CCY"/>
-                                    <segue destination="9sm-fH-UKC" kind="show" id="ZnO-KM-pYM"/>
+                                    <segue destination="9sm-fH-UKC" kind="show" identifier="seg" id="98z-x6-5yf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q53-pz-6PT">
@@ -131,7 +131,7 @@
         <!--Schedule View Controller-->
         <scene sceneID="mju-A7-9QI">
             <objects>
-                <viewController id="9sm-fH-UKC" customClass="ScheduleViewController" customModule="Rize" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sched" id="9sm-fH-UKC" customClass="ScheduleViewController" customModule="Rize" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jF2-Q7-mEd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
