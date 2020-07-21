@@ -41,12 +41,6 @@ class DashboardViewController: UIViewController, FSCalendarDelegate, FSCalendarD
     
     override func viewDidLoad() {
         
-        if Auth.auth().currentUser == nil {
-           let vc = storyboard?.instantiateViewController(identifier: "start" ) as! StartViewController
-           vc.modalPresentationStyle = .fullScreen
-           present(vc, animated: false)
-        }
-        
         super.viewDidLoad()
         title = "Home"
         self.host.layer.cornerRadius = 25
@@ -202,11 +196,7 @@ class DashboardViewController: UIViewController, FSCalendarDelegate, FSCalendarD
     }
     
     @IBAction func schedule(_ sender: Any) {
-        self.performSegue(withIdentifier: "seg", sender: nil)
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "sched") as! ScheduleViewController
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated:true, completion:nil)
+        
     }
     
     @IBAction func new(_ sender: Any) {
