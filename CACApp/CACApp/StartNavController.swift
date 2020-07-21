@@ -6,10 +6,18 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class StartNavController: UINavigationController {
 
     override func viewDidLoad() {
+        
+        if Auth.auth().currentUser == !nil {
+                  let vc = storyboard?.instantiateViewController(identifier: "dashboardNav" ) as! DashboardNavController
+                  vc.modalPresentationStyle = .fullScreen
+                  present(vc, animated: false)
+               }
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
