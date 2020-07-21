@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P7f-6x-xcK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P7f-6x-xcK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -10,7 +10,7 @@
         <!--Dashboard-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController storyboardIdentifier="dashboard" id="9pv-A4-QxB" customClass="DashboardViewController" customModule="CACApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dashboard" id="9pv-A4-QxB" customClass="DashboardViewController" customModule="Rize" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,6 +40,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="schedule:" destination="9pv-A4-QxB" eventType="touchUpInside" id="9eg-GE-CCY"/>
+                                    <segue destination="9sm-fH-UKC" kind="show" id="ZnO-KM-pYM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q53-pz-6PT">
@@ -127,10 +128,60 @@
             </objects>
             <point key="canvasLocation" x="4389.855072463768" y="-320.08928571428572"/>
         </scene>
+        <!--Schedule View Controller-->
+        <scene sceneID="mju-A7-9QI">
+            <objects>
+                <viewController id="9sm-fH-UKC" customClass="ScheduleViewController" customModule="Rize" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jF2-Q7-mEd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfN-6h-oFb">
+                                <rect key="frame" x="20" y="157" width="87" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1Gh-qJ-s94"/>
+                                    <constraint firstAttribute="width" constant="87" id="Vf7-7w-Wf9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QQS-TG-3zB">
+                                <rect key="frame" x="102" y="150" width="280" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="5bf-id-8cN"/>
+                                    <constraint firstAttribute="width" constant="280" id="k5B-45-lOM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JfN-6h-oFb" firstAttribute="top" secondItem="8cj-IO-cQN" secondAttribute="top" constant="69" id="9Mf-BL-jWU"/>
+                            <constraint firstItem="8cj-IO-cQN" firstAttribute="bottom" secondItem="QQS-TG-3zB" secondAttribute="bottom" constant="629" id="BHd-2d-tu3"/>
+                            <constraint firstItem="QQS-TG-3zB" firstAttribute="leading" secondItem="8cj-IO-cQN" secondAttribute="leading" constant="102" id="QK1-Ot-cLU"/>
+                            <constraint firstItem="8cj-IO-cQN" firstAttribute="bottom" secondItem="JfN-6h-oFb" secondAttribute="bottom" constant="635" id="ddk-wf-4me"/>
+                            <constraint firstItem="QQS-TG-3zB" firstAttribute="top" secondItem="8cj-IO-cQN" secondAttribute="top" constant="62" id="iRF-27-khK"/>
+                            <constraint firstItem="JfN-6h-oFb" firstAttribute="leading" secondItem="8cj-IO-cQN" secondAttribute="leading" constant="20" id="ieC-gn-mYT"/>
+                            <constraint firstItem="8cj-IO-cQN" firstAttribute="trailing" secondItem="QQS-TG-3zB" secondAttribute="trailing" constant="32" id="kQC-w0-yxf"/>
+                            <constraint firstItem="8cj-IO-cQN" firstAttribute="trailing" secondItem="JfN-6h-oFb" secondAttribute="trailing" constant="307" id="oCx-Ap-6cg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8cj-IO-cQN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SMu-hk-bcl"/>
+                    <connections>
+                        <outlet property="inputTextField" destination="QQS-TG-3zB" id="f9q-5k-4Ve"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ro8-8i-QGo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5660.8695652173919" y="-320.08928571428572"/>
+        </scene>
         <!--Profile-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController storyboardIdentifier="profile" title="Profile" id="8rJ-Kc-sve" customClass="ProfileViewController" customModule="CACApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profile" title="Profile" id="8rJ-Kc-sve" customClass="ProfileViewController" customModule="Rize" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tau-cz-9hU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,7 +293,7 @@
         <!--Edit Profile View Controller-->
         <scene sceneID="TPv-yx-3OM">
             <objects>
-                <viewController storyboardIdentifier="editProfile" id="ilf-mX-ipP" customClass="EditProfileViewController" customModule="CACApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="editProfile" id="ilf-mX-ipP" customClass="EditProfileViewController" customModule="Rize" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8yD-3a-5kG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -406,7 +457,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="74l-9N-2Hy">
             <objects>
-                <viewController storyboardIdentifier="welcome" id="P7f-6x-xcK" customClass="WelcomeViewController" customModule="CACApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="welcome" id="P7f-6x-xcK" customClass="WelcomeViewController" customModule="Rize" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iai-pe-dWV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -443,7 +494,7 @@
         <!--Rize-->
         <scene sceneID="6jw-iQ-oFt">
             <objects>
-                <viewController storyboardIdentifier="start" id="9ff-E9-YX4" customClass="StartViewController" customModule="CACApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="start" id="9ff-E9-YX4" customClass="StartViewController" customModule="Rize" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dbS-Dm-wyf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -514,7 +565,7 @@
         <!--Login View Controller-->
         <scene sceneID="c1Y-lz-0g3">
             <objects>
-                <viewController id="2V4-Ct-zaY" customClass="LoginViewController" customModule="CACApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2V4-Ct-zaY" customClass="LoginViewController" customModule="Rize" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0mN-3O-564">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -611,7 +662,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="u0E-xl-rFY">
             <objects>
-                <viewController storyboardIdentifier="signUp" id="pN1-5d-rdk" customClass="SignUpViewController" customModule="CACApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signUp" id="pN1-5d-rdk" customClass="SignUpViewController" customModule="Rize" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h4n-b5-qZF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -766,7 +817,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController storyboardIdentifier="tabBar" id="49e-Tb-3d3" customClass="TabBarController" customModule="CACApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="49e-Tb-3d3" customClass="TabBarController" customModule="Rize" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -803,7 +854,7 @@
         <!--Home-->
         <scene sceneID="bsA-kh-lFe">
             <objects>
-                <navigationController storyboardIdentifier="dashboardNav" automaticallyAdjustsScrollViewInsets="NO" id="uOb-pQ-USN" customClass="DashboardNavController" customModule="CACApp" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="dashboardNav" automaticallyAdjustsScrollViewInsets="NO" id="uOb-pQ-USN" customClass="DashboardNavController" customModule="Rize" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="acW-dT-cKf">
                         <color key="badgeColor" red="1" green="0.57408606288630093" blue="0.53868426815759585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
@@ -824,7 +875,7 @@
         <!--Sign Up2 View Controller-->
         <scene sceneID="Dqt-Gw-X98">
             <objects>
-                <viewController storyboardIdentifier="signUp2" id="H2y-EE-8PF" customClass="SignUp2ViewController" customModule="CACApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signUp2" id="H2y-EE-8PF" customClass="SignUp2ViewController" customModule="Rize" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yVw-cR-lz3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -941,7 +992,7 @@
         <!--Start Nav Controller-->
         <scene sceneID="WVl-C7-CPa">
             <objects>
-                <navigationController storyboardIdentifier="startNav" automaticallyAdjustsScrollViewInsets="NO" id="apY-NV-ZXq" customClass="StartNavController" customModule="CACApp" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="startNav" automaticallyAdjustsScrollViewInsets="NO" id="apY-NV-ZXq" customClass="StartNavController" customModule="Rize" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cMP-J4-R9i">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

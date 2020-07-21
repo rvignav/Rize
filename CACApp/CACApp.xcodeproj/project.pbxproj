@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9FD96BBE8FEE4A1BF934A158 /* Pods_CACApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2017CD6365B58A2D460419C /* Pods_CACApp.framework */; };
+		A318EE8C24C6D01000BD7E2C /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A318EE8B24C6D01000BD7E2C /* ScheduleViewController.swift */; };
 		A38DD1A2249F3273003D724B /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DD1A1249F3273003D724B /* UploadViewController.swift */; };
 		A3B22735249AF58B0043FE44 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3B22734249AF58B0043FE44 /* GoogleService-Info.plist */; };
 		C908A367249C186E0099F89C /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C908A366249C186E0099F89C /* DashboardViewController.swift */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		31C948822D60544259EE52B8 /* Pods-CACApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CACApp.release.xcconfig"; path = "Target Support Files/Pods-CACApp/Pods-CACApp.release.xcconfig"; sourceTree = "<group>"; };
 		6AC6D716F1D93036B540DC7B /* Pods-CACApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CACApp.debug.xcconfig"; path = "Target Support Files/Pods-CACApp/Pods-CACApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A318EE8B24C6D01000BD7E2C /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		A38DD1A1249F3273003D724B /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		A3B22734249AF58B0043FE44 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C908A366249C186E0099F89C /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				C91F146D24BCFC34009A92F5 /* DashboardNavController.swift */,
 				C91F146F24BCFC57009A92F5 /* StartNavController.swift */,
 				C91F147124BCFE2A009A92F5 /* TabBarController.swift */,
+				A318EE8B24C6D01000BD7E2C /* ScheduleViewController.swift */,
 			);
 			path = CACApp;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				C9A7A90724B7899400FDB153 /* EditProfileViewController.swift in Sources */,
 				C9B3672E249C7AAD005C1C3F /* ProfileViewController.swift in Sources */,
 				A38DD1A2249F3273003D724B /* UploadViewController.swift in Sources */,
+				A318EE8C24C6D01000BD7E2C /* ScheduleViewController.swift in Sources */,
 				C9692E4F249AEAAB00569CF1 /* SecondViewController.swift in Sources */,
 				C9692E4D249AEAAB00569CF1 /* FirstViewController.swift in Sources */,
 				C96B05CF24B8164500C16839 /* SignUp2ViewController.swift in Sources */,
