@@ -1,0 +1,6 @@
+framework module Pods_Video_Internal {
+  umbrella header "Pods-Video-Internal-umbrella.h"
+
+  export *
+  module * { export * }
+}

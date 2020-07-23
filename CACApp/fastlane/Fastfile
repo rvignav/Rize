@@ -1,0 +1,65 @@
+fastlane_version "2.28.3"
+
+default_platform :ios
+
+platform :ios do
+  before_all do
+    cocoapods
+  end
+
+  lane :test do |options|
+    scan(
+      scheme: options[:scheme], 
+      testplan: options[:test_plan], 
+      device: "iPhone 11",
+      skip_slack: true
+    )
+  end
+
+  lane :status_check do
+    begin
+      test(scheme: "Video-Internal", test_plan: "StatusCheck")
+    rescue
+      slack(
+        channel: "tcr-test",
+        success: false,
+        message: "Failed <#{ENV["CIRCLE_BUILD_URL"]}|iOS status check> 🔥🔥🔥",
+        default_payloads: [],
+      )
+
+      raise
+    end
+  end
+
+  lane :beta do
+    ensure_git_status_clean
+    increment_build_number(xcodeproj: "VideoApp/VideoApp.xcodeproj")
+    commit_version_bump(message: "Increment build number [skip ci]", xcodeproj: "VideoApp/VideoApp.xcodeproj")
+    add_git_tag
+    push_to_git_remote
+
+    gym(
+      scheme: "Video-Internal",
+      export_options: {
+        method: "enterprise",
+        compileBitcode: false,
+        thinning: "<none>",
+        signingStyle: "manual",
+        signingCertificate: "iPhone Distribution: Twilio, Inc.",
+        provisioningProfiles: {
+          "com.twilio.video-app-internal" => "VideoApp-Internal-Distribution"
+        }
+      }
+    ) 
+
+    upload_symbols_to_crashlytics()
+
+    appcenter_upload(
+      api_token: ENV["APP_CENTER_API_KEY"],
+      owner_name: ENV["APP_CENTER_OWNER_NAME"],
+      app_name: "Ahoy-Video-App-Internal",
+      destinations: "Testers",
+      file: "Video-Internal.ipa"
+    )
+  end
+end
