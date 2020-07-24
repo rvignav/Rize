@@ -32,6 +32,8 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>60</string>
+	<key>FirebaseScreenReportingEnabled</key>
+	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
@@ -76,8 +78,6 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>firebase_crashlytics_collection_enabled</key>
-	<false/>
-	<key>FirebaseScreenReportingEnabled</key>
 	<false/>
 </dict>
 </plist>

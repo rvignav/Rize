@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wIw-eU-e2g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wIw-eU-e2g">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -1162,7 +1162,7 @@
         <!--Sign Up2 View Controller-->
         <scene sceneID="Pg2-Cr-EU3">
             <objects>
-                <viewController storyboardIdentifier="signUp2" id="6E7-FU-tzW" customClass="SignUp2ViewController" customModule="Rize" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signUp2" id="6E7-FU-tzW" customClass="SignUp2ViewController" customModule="VideoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Dv-2h-bF6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1376,7 +1376,7 @@
         <!--Dashboard-->
         <scene sceneID="nZa-SR-Z0m">
             <objects>
-                <viewController storyboardIdentifier="dashboard" id="Pqg-dt-fgE" customClass="DashboardViewController" customModule="Rize" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dashboard" id="Pqg-dt-fgE" customClass="DashboardViewController" customModule="VideoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BRD-Am-Iwd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1497,7 +1497,7 @@
         <!--Schedule View Controller-->
         <scene sceneID="CJ0-AY-wGw">
             <objects>
-                <viewController storyboardIdentifier="sched" id="Z8N-v2-bYD" customClass="ScheduleViewController" customModule="Rize" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sched" id="Z8N-v2-bYD" customClass="ScheduleViewController" customModule="VideoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iWd-lu-cw4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1547,7 +1547,7 @@
         <!--Profile-->
         <scene sceneID="Rfo-BM-lBj">
             <objects>
-                <viewController storyboardIdentifier="profile" title="Profile" id="5BD-ci-wgS" customClass="ProfileViewController" customModule="Rize" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profile" title="Profile" id="5BD-ci-wgS" customClass="ProfileViewController" customModule="VideoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cGq-Rn-W0V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1604,24 +1604,85 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Beu-9B-Lyr">
                                 <rect key="frame" x="0.0" y="264" width="414" height="549"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOr-IS-95H">
-                                        <rect key="frame" x="154" y="165" width="107.5" height="26"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile Picture Sahil Roy" translatesAutoresizingMaskIntoConstraints="NO" id="dKk-TG-J09">
+                                        <rect key="frame" x="57" y="17" width="300" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="bQ0-3b-XcB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sahil Roy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOr-IS-95H">
+                                        <rect key="frame" x="100" y="241" width="107.5" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="107.5" id="pdH-A8-799"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pfp" translatesAutoresizingMaskIntoConstraints="NO" id="Unl-Fl-qK1">
-                                        <rect key="frame" x="132" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <integer key="value" value="25"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Location Pin" translatesAutoresizingMaskIntoConstraints="NO" id="cEP-Re-wMG">
+                                        <rect key="frame" x="57" y="296" width="49" height="47"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="680-ml-rnX"/>
+                                            <constraint firstAttribute="width" constant="49" id="CAv-Dm-gs3"/>
+                                        </constraints>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Mumbai, India" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xo-Ha-3we">
+                                        <rect key="frame" x="114" y="303" width="129" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="129" id="cjE-b0-t6E"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="School Icon" translatesAutoresizingMaskIntoConstraints="NO" id="fp7-Rq-XbR">
+                                        <rect key="frame" x="57" y="360" width="49" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="cuK-qW-Dhp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St. Stephen's College, Delhi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkS-Lh-80g">
+                                        <rect key="frame" x="114" y="377" width="212" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Career Icon" translatesAutoresizingMaskIntoConstraints="NO" id="i83-h7-dpw">
+                                        <rect key="frame" x="57" y="423" width="49" height="59"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doctor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AB-l9-7RW">
+                                        <rect key="frame" x="114" y="442" width="53" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="WkS-Lh-80g" firstAttribute="leading" secondItem="fp7-Rq-XbR" secondAttribute="trailing" constant="8" id="0H7-yX-BUY"/>
+                                    <constraint firstItem="dKk-TG-J09" firstAttribute="top" secondItem="Beu-9B-Lyr" secondAttribute="top" constant="17" id="0YC-qa-WKD"/>
+                                    <constraint firstItem="8Xo-Ha-3we" firstAttribute="top" secondItem="GOr-IS-95H" secondAttribute="bottom" constant="30" id="0hM-as-hYy"/>
+                                    <constraint firstItem="fp7-Rq-XbR" firstAttribute="trailing" secondItem="i83-h7-dpw" secondAttribute="trailing" id="4Nf-gI-jyH"/>
+                                    <constraint firstItem="fp7-Rq-XbR" firstAttribute="leading" secondItem="Beu-9B-Lyr" secondAttribute="leading" constant="57" id="965-yz-j00"/>
+                                    <constraint firstItem="i83-h7-dpw" firstAttribute="top" secondItem="fp7-Rq-XbR" secondAttribute="bottom" constant="8" id="Bll-cl-BVI"/>
+                                    <constraint firstItem="i83-h7-dpw" firstAttribute="leading" secondItem="Beu-9B-Lyr" secondAttribute="leading" constant="57" id="G8t-6H-HS9"/>
+                                    <constraint firstItem="fp7-Rq-XbR" firstAttribute="top" secondItem="cEP-Re-wMG" secondAttribute="bottom" constant="17" id="JlA-u1-0Xm"/>
+                                    <constraint firstItem="8Xo-Ha-3we" firstAttribute="leading" secondItem="cEP-Re-wMG" secondAttribute="trailing" constant="8" id="MiR-sA-ZgT"/>
+                                    <constraint firstItem="8Xo-Ha-3we" firstAttribute="bottom" secondItem="cEP-Re-wMG" secondAttribute="bottom" id="Moe-8f-800"/>
+                                    <constraint firstItem="9AB-l9-7RW" firstAttribute="leading" secondItem="i83-h7-dpw" secondAttribute="trailing" constant="8" id="Nrg-LH-xfR"/>
+                                    <constraint firstItem="GOr-IS-95H" firstAttribute="top" secondItem="dKk-TG-J09" secondAttribute="bottom" constant="24" id="Oxr-tS-nwG"/>
+                                    <constraint firstItem="i83-h7-dpw" firstAttribute="top" secondItem="fp7-Rq-XbR" secondAttribute="bottom" constant="8" id="PaX-5S-b6j"/>
+                                    <constraint firstItem="dKk-TG-J09" firstAttribute="leading" secondItem="Beu-9B-Lyr" secondAttribute="leading" constant="57" id="VOb-P2-4eR"/>
+                                    <constraint firstItem="dKk-TG-J09" firstAttribute="centerX" secondItem="Beu-9B-Lyr" secondAttribute="centerX" id="Ype-Up-fXc"/>
+                                    <constraint firstItem="WkS-Lh-80g" firstAttribute="centerY" secondItem="fp7-Rq-XbR" secondAttribute="centerY" id="dk0-c5-QZM"/>
+                                    <constraint firstItem="9AB-l9-7RW" firstAttribute="top" secondItem="WkS-Lh-80g" secondAttribute="bottom" constant="44" id="eMh-yo-1u4"/>
+                                    <constraint firstItem="fp7-Rq-XbR" firstAttribute="trailing" secondItem="cEP-Re-wMG" secondAttribute="trailing" id="igR-WG-l4h"/>
+                                    <constraint firstItem="9AB-l9-7RW" firstAttribute="centerY" secondItem="i83-h7-dpw" secondAttribute="centerY" id="qEr-2J-w0Z"/>
+                                    <constraint firstItem="cEP-Re-wMG" firstAttribute="top" secondItem="GOr-IS-95H" secondAttribute="bottom" constant="23" id="sal-or-dGO"/>
+                                    <constraint firstItem="GOr-IS-95H" firstAttribute="leading" secondItem="Beu-9B-Lyr" secondAttribute="leading" constant="100" id="unD-By-cWM"/>
+                                    <constraint firstItem="cEP-Re-wMG" firstAttribute="leading" secondItem="Beu-9B-Lyr" secondAttribute="leading" constant="57" id="xcs-Yw-lZy"/>
+                                    <constraint firstItem="fp7-Rq-XbR" firstAttribute="leading" secondItem="i83-h7-dpw" secondAttribute="leading" id="zuR-xI-Sa7"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1647,19 +1708,18 @@
                     </view>
                     <navigationItem key="navigationItem" id="EdG-Q7-9qe"/>
                     <connections>
-                        <outlet property="profileImage" destination="Unl-Fl-qK1" id="NkO-oQ-5XS"/>
                         <outlet property="profileView" destination="Beu-9B-Lyr" id="XKo-pV-IZf"/>
                         <outlet property="transcriptView" destination="ChE-an-Nik" id="XWW-hW-Q09"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P5a-40-Axg" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3487" y="396"/>
+            <point key="canvasLocation" x="-3488.4057971014495" y="395.75892857142856"/>
         </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="fHc-Jt-QfO">
             <objects>
-                <viewController storyboardIdentifier="editProfile" id="fXx-4H-N09" customClass="EditProfileViewController" customModule="Rize" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="editProfile" id="fXx-4H-N09" customClass="EditProfileViewController" customModule="VideoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Gk-GW-zOi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1877,6 +1937,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Career Icon" width="32" height="44"/>
+        <image name="Location Pin" width="36" height="52"/>
+        <image name="Profile Picture Sahil Roy" width="452" height="344"/>
+        <image name="School Icon" width="36" height="34"/>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="hangup" width="26" height="10"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
