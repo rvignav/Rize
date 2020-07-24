@@ -10,6 +10,8 @@ import FirebaseAuth
 
 class ProfileViewController: UIViewController {
     
+    @IBOutlet weak var profileSahilRoy: UIImageView!
+    
     @IBOutlet weak var profileImage: UIImageView!
     
     @IBOutlet weak var profileView: UIView!
@@ -37,6 +39,11 @@ class ProfileViewController: UIViewController {
         self.profileImage.clipsToBounds = true;
         
         // make this pfp the same as the one that was chosen in the edit page
+        
+        profileSahilRoy.layer.cornerRadius = 20;
+        profileSahilRoy.clipsToBounds = true;
+        
+        
 
     }
 
