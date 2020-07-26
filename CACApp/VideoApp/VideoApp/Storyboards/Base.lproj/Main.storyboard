@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wIw-eU-e2g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wIw-eU-e2g">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -1615,7 +1615,7 @@
                                             <constraint firstAttribute="height" constant="200" id="bQ0-3b-XcB"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sahil Roy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOr-IS-95H">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Last" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOr-IS-95H">
                                         <rect key="frame" x="100" y="241" width="107.5" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="107.5" id="pdH-A8-799"/>
@@ -1631,7 +1631,7 @@
                                             <constraint firstAttribute="width" constant="49" id="CAv-Dm-gs3"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Mumbai, India" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xo-Ha-3we">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saratoga, CA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xo-Ha-3we">
                                         <rect key="frame" x="114" y="303" width="129" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="129" id="cjE-b0-t6E"/>
@@ -1640,23 +1640,23 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="School Icon" translatesAutoresizingMaskIntoConstraints="NO" id="fp7-Rq-XbR">
-                                        <rect key="frame" x="57" y="360" width="49" height="55"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signature" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fp7-Rq-XbR">
+                                        <rect key="frame" x="57" y="362" width="49" height="55.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="cuK-qW-Dhp"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St. Stephen's College, Delhi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkS-Lh-80g">
-                                        <rect key="frame" x="114" y="377" width="212" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Johnson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkS-Lh-80g">
+                                        <rect key="frame" x="114" y="377" width="92" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Career Icon" translatesAutoresizingMaskIntoConstraints="NO" id="i83-h7-dpw">
-                                        <rect key="frame" x="57" y="423" width="49" height="59"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bandage.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="i83-h7-dpw">
+                                        <rect key="frame" x="57" y="422.5" width="49" height="59.5"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doctor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AB-l9-7RW">
-                                        <rect key="frame" x="114" y="442" width="53" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congestion, Runny Nose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AB-l9-7RW">
+                                        <rect key="frame" x="114" y="442" width="189" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1943,11 +1943,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Career Icon" width="32" height="44"/>
         <image name="Location Pin" width="36" height="52"/>
         <image name="Profile Picture Sahil Roy" width="452" height="344"/>
-        <image name="School Icon" width="36" height="34"/>
         <image name="Screen Shot 2020-06-18 at 11.01.13 PM" width="1080" height="502"/>
+        <image name="bandage.fill" catalog="system" width="128" height="116"/>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="hangup" width="26" height="10"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
@@ -1957,6 +1956,7 @@
         <image name="pfp" width="920" height="706"/>
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>
         <image name="settings-white" width="24" height="24"/>
+        <image name="signature" catalog="system" width="128" height="90"/>
         <image name="stats-disabled" width="60" height="60"/>
         <image name="switch-camera" width="24" height="24"/>
         <image name="twilio-name-white" width="168" height="47"/>
