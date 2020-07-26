@@ -196,11 +196,14 @@ class DashboardViewController: UIViewController, FSCalendarDelegate, FSCalendarD
     }
     
     @IBAction func schedule(_ sender: Any) {
+    
         
     }
     
     @IBAction func new(_ sender: Any) {
-        
+        let vc = storyboard?.instantiateViewController(identifier: "startVideoNav") as! StartNavController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
     }
 
     

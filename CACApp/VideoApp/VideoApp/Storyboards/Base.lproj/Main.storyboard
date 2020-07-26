@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wIw-eU-e2g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Dq-Wx-Bb4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -866,7 +866,7 @@
         <!--Start Nav Controller-->
         <scene sceneID="1rQ-RV-Zxs">
             <objects>
-                <navigationController navigationBarHidden="YES" id="Oqf-hp-6pe" customClass="StartNavController" customModule="VideoApp" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="startVideoNav" navigationBarHidden="YES" id="Oqf-hp-6pe" customClass="StartNavController" customModule="VideoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WTF-W4-dkm">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1711,7 +1711,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hyK-4y-uj8"/>
                     </view>
-                    <navigationItem key="navigationItem" id="EdG-Q7-9qe"/>
+                    <navigationItem key="navigationItem" title="Profile" id="EdG-Q7-9qe"/>
                     <connections>
                         <outlet property="profileSahilRoy" destination="dKk-TG-J09" id="Tau-8Q-Q30"/>
                         <outlet property="profileView" destination="Beu-9B-Lyr" id="XKo-pV-IZf"/>

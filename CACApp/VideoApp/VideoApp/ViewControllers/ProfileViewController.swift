@@ -35,8 +35,8 @@ class ProfileViewController: UIViewController {
         profileView.isHidden = false
         transcriptView.isHidden = true
         
-        self.profileImage.layer.cornerRadius = self.profileImage.frame.size.width / 2;
-        self.profileImage.clipsToBounds = true;
+//        self.profileImage.layer.cornerRadius = self.profileImage.frame.size.width / 2;
+//        self.profileImage.clipsToBounds = true;
         
         // make this pfp the same as the one that was chosen in the edit page
         
@@ -46,7 +46,6 @@ class ProfileViewController: UIViewController {
         
 
     }
-
     
     @IBAction func editProfile(_ sender: Any) {
         
