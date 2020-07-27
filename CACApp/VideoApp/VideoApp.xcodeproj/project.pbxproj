@@ -31,9 +31,9 @@
 		8AC4999B232A18D2005A4B35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC49999232A18D2005A4B35 /* SceneDelegate.swift */; };
 		8AC4999C232A18D2005A4B35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC49999232A18D2005A4B35 /* SceneDelegate.swift */; };
 		93223A7F4DEC256BF49177A0 /* Pods_Video_Internal_Video_Community.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAD7F49B9C6F06A36CDD692 /* Pods_Video_Internal_Video_Community.framework */; };
+		C98C830B24CE50A8000EBF26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C98C830A24CE50A8000EBF26 /* GoogleService-Info.plist */; };
 		C9BC5F1B24C930D200D29128 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC5F1A24C930D200D29128 /* SignUpViewController.swift */; };
 		C9BC5F1D24C9314500D29128 /* SignUp2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC5F1C24C9314500D29128 /* SignUp2ViewController.swift */; };
-		C9BC5F1F24C932A700D29128 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9BC5F1E24C932A700D29128 /* GoogleService-Info.plist */; };
 		C9BC5F2324C9339900D29128 /* LogonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC5F2224C9339900D29128 /* LogonViewController.swift */; };
 		C9BC5F2524C9349A00D29128 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC5F2424C9349A00D29128 /* TabBarController.swift */; };
 		C9BC5F2724C934D400D29128 /* DashboardNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC5F2624C934D400D29128 /* DashboardNavController.swift */; };
@@ -482,9 +482,9 @@
 		B18CDAA6CE26C50150300CC2 /* Pods-Video-Twilio-Video-TwilioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Video-Twilio-Video-TwilioTests.debug.xcconfig"; path = "Target Support Files/Pods-Video-Twilio-Video-TwilioTests/Pods-Video-Twilio-Video-TwilioTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3AB78B22F2DA8EBE6CE00CE /* Pods-Video-Community.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Video-Community.release.xcconfig"; path = "Target Support Files/Pods-Video-Community/Pods-Video-Community.release.xcconfig"; sourceTree = "<group>"; };
 		B3E48E3694ED13BADF86A97C /* Pods-Video-InternalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Video-InternalUITests.release.xcconfig"; path = "Target Support Files/Pods-Video-InternalUITests/Pods-Video-InternalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C98C830A24CE50A8000EBF26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C9BC5F1A24C930D200D29128 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		C9BC5F1C24C9314500D29128 /* SignUp2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp2ViewController.swift; sourceTree = "<group>"; };
-		C9BC5F1E24C932A700D29128 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C9BC5F2224C9339900D29128 /* LogonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogonViewController.swift; sourceTree = "<group>"; };
 		C9BC5F2424C9349A00D29128 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		C9BC5F2624C934D400D29128 /* DashboardNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardNavController.swift; sourceTree = "<group>"; };
@@ -804,7 +804,7 @@
 				241282461E36A6AB002198BE /* Assets.xcassets */,
 				24C5217720FFAD030018E2D8 /* Bridging-Header.h */,
 				2412824B1E36A6AB002198BE /* Info.plist */,
-				C9BC5F1E24C932A700D29128 /* GoogleService-Info.plist */,
+				C98C830A24CE50A8000EBF26 /* GoogleService-Info.plist */,
 				24480A451EF07716003BCF00 /* Video.entitlements */,
 			);
 			path = VideoApp;
@@ -1744,7 +1744,7 @@
 						ProvisioningStyle = Automatic;
 					};
 					4B00125F1FBA52E5004A587E = {
-						DevelopmentTeam = 6V4MW8CL93;
+						DevelopmentTeam = 87JL4NC93M;
 						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 					};
@@ -1816,11 +1816,11 @@
 				DCAEBF352383560500141D2D /* EditTextCell.xib in Resources */,
 				DC9A5DFE245CB66800E4B079 /* VideoView.xib in Resources */,
 				DC44C2C723870D0800205174 /* BasicCell.xib in Resources */,
+				C98C830B24CE50A8000EBF26 /* GoogleService-Info.plist in Resources */,
 				4B0012811FBA52E5004A587E /* Assets.xcassets in Resources */,
 				DC44C2BF238704FB00205174 /* RightDetailCell.xib in Resources */,
 				DC9A5E132460CE9800E4B079 /* ParticipantCell.xib in Resources */,
 				C9BC5F2D24C9362A00D29128 /* CardViewController.xib in Resources */,
-				C9BC5F1F24C932A700D29128 /* GoogleService-Info.plist in Resources */,
 				4B0012831FBA52E5004A587E /* Main.storyboard in Resources */,
 				DCAEBF19238331A800141D2D /* SwitchCell.xib in Resources */,
 			);
@@ -2913,7 +2913,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 60;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6V4MW8CL93;
+				DEVELOPMENT_TEAM = 87JL4NC93M;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -2928,7 +2928,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.HowardHuang.video-app-community";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ayaanzhaque.video-app-community";
 				PRODUCT_MODULE_NAME = VideoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2951,7 +2951,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 60;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6V4MW8CL93;
+				DEVELOPMENT_TEAM = 87JL4NC93M;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = VideoApp/Info.plist;
@@ -2963,7 +2963,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.HowardHuang.video-app-community";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ayaanzhaque.video-app-community";
 				PRODUCT_MODULE_NAME = VideoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
