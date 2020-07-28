@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,51 @@
 		8AC4999B232A18D2005A4B35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC49999232A18D2005A4B35 /* SceneDelegate.swift */; };
 		8AC4999C232A18D2005A4B35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC49999232A18D2005A4B35 /* SceneDelegate.swift */; };
 		93223A7F4DEC256BF49177A0 /* Pods_Video_Internal_Video_Community.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAD7F49B9C6F06A36CDD692 /* Pods_Video_Internal_Video_Community.framework */; };
+		A31F5ACA24CFB26700E0F0AC /* ElegantCalendar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A31F5AC924CFB26700E0F0AC /* ElegantCalendar.xcassets */; };
+		A32B3FEC24CFAB3200CD7337 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B3FEB24CFAB3200CD7337 /* HomeView.swift */; };
+		A32B3FEF24CFAB5200CD7337 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B3FEE24CFAB5200CD7337 /* MenuView.swift */; };
+		A32B3FF624CFAB6900CD7337 /* MenuBarIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B3FF024CFAB6000CD7337 /* MenuBarIndicator.swift */; };
+		A32B3FF724CFAB6900CD7337 /* ScrollBackToTodayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B3FF124CFAB6100CD7337 /* ScrollBackToTodayButton.swift */; };
+		A32B3FF824CFAB6900CD7337 /* ResizingOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B3FF224CFAB6300CD7337 /* ResizingOverlayView.swift */; };
+		A32B3FF924CFAB6900CD7337 /* VisitsPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B3FF424CFAB6600CD7337 /* VisitsPreviewView.swift */; };
+		A32B3FFA24CFAB6900CD7337 /* FromTodayPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B3FF524CFAB6800CD7337 /* FromTodayPopupView.swift */; };
+		A32B3FFF24CFAB8700CD7337 /* VisitsTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B3FFC24CFAB8400CD7337 /* VisitsTimelineView.swift */; };
+		A32B400024CFAB8700CD7337 /* MonthYearSideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B3FFD24CFAB8500CD7337 /* MonthYearSideBar.swift */; };
+		A32B400124CFAB8700CD7337 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B3FFE24CFAB8700CD7337 /* QuoteView.swift */; };
+		A32B400424CFAB9B00CD7337 /* VisitsPreviewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B400324CFAB9B00CD7337 /* VisitsPreviewList.swift */; };
+		A32B400824CFABB000CD7337 /* DaySideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B400624CFABAF00CD7337 /* DaySideBar.swift */; };
+		A32B400924CFABB000CD7337 /* DayVisitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B400724CFABB000CD7337 /* DayVisitsView.swift */; };
+		A32B400D24CFABC000CD7337 /* VisitPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B400B24CFABBF00CD7337 /* VisitPreviewCell.swift */; };
+		A32B400E24CFABC000CD7337 /* DayPreviewBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B400C24CFABC000CD7337 /* DayPreviewBlock.swift */; };
+		A32B401224CFABFB00CD7337 /* VisitsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B401024CFABFA00CD7337 /* VisitsListView.swift */; };
+		A32B401324CFABFB00CD7337 /* VisitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B401124CFABFB00CD7337 /* VisitCell.swift */; };
+		A32B402724CFAC5E00CD7337 /* Calendar+DateOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B401824CFAC4C00CD7337 /* Calendar+DateOperations.swift */; };
+		A32B402824CFAC5E00CD7337 /* Comparable+Clamped.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B401924CFAC4E00CD7337 /* Comparable+Clamped.swift */; };
+		A32B402924CFAC5E00CD7337 /* DateComponents+Strideable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B401A24CFAC4F00CD7337 /* DateComponents+Strideable.swift */; };
+		A32B402A24CFAC5E00CD7337 /* EnvironmentKey+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B401B24CFAC5000CD7337 /* EnvironmentKey+Timer.swift */; };
+		A32B402B24CFAC5E00CD7337 /* Dictionary+SortedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B401C24CFAC5100CD7337 /* Dictionary+SortedKeys.swift */; };
+		A32B402C24CFAC5E00CD7337 /* EnvironmentKey+AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B401D24CFAC5200CD7337 /* EnvironmentKey+AppTheme.swift */; };
+		A32B402D24CFAC5E00CD7337 /* View+CaptureSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B401E24CFAC5400CD7337 /* View+CaptureSize.swift */; };
+		A32B402E24CFAC5E00CD7337 /* Date+toDateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B401F24CFAC5600CD7337 /* Date+toDateComponents.swift */; };
+		A32B402F24CFAC5E00CD7337 /* Image+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B402024CFAC5700CD7337 /* Image+Custom.swift */; };
+		A32B403024CFAC5E00CD7337 /* Color+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B402124CFAC5800CD7337 /* Color+Custom.swift */; };
+		A32B403124CFAC5E00CD7337 /* Date+DaysFromToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B402224CFAC5900CD7337 /* Date+DaysFromToday.swift */; };
+		A32B403224CFAC5E00CD7337 /* Date+toString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B402324CFAC5A00CD7337 /* Date+toString.swift */; };
+		A32B403324CFAC5E00CD7337 /* DateComponents+Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B402424CFAC5B00CD7337 /* DateComponents+Comparable.swift */; };
+		A32B403424CFAC5E00CD7337 /* View+Rotated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B402524CFAC5D00CD7337 /* View+Rotated.swift */; };
+		A32B403524CFAC5E00CD7337 /* DateComponents+Subcomponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B402624CFAC5E00CD7337 /* DateComponents+Subcomponents.swift */; };
+		A32B403A24CFAC7500CD7337 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B403624CFAC7100CD7337 /* Constants.swift */; };
+		A32B403B24CFAC7500CD7337 /* Visit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B403724CFAC7200CD7337 /* Visit.swift */; };
+		A32B403C24CFAC7500CD7337 /* VisitsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B403824CFAC7300CD7337 /* VisitsProvider.swift */; };
+		A32B403D24CFAC7500CD7337 /* UITableViewDirectAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B403924CFAC7500CD7337 /* UITableViewDirectAccess.swift */; };
+		A32B404424CFAC9200CD7337 /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B403E24CFAC8A00CD7337 /* HomeManager.swift */; };
+		A32B404524CFAC9200CD7337 /* PageScrollState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B403F24CFAC8B00CD7337 /* PageScrollState.swift */; };
+		A32B404624CFAC9200CD7337 /* MonthYearSideBarState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B404024CFAC8C00CD7337 /* MonthYearSideBarState.swift */; };
+		A32B404724CFAC9200CD7337 /* QuoteState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B404124CFAC8D00CD7337 /* QuoteState.swift */; };
+		A32B404824CFAC9200CD7337 /* ListScrollState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B404224CFAC8F00CD7337 /* ListScrollState.swift */; };
+		A32B404924CFAC9200CD7337 /* FromTodayPopupState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B404324CFAC9200CD7337 /* FromTodayPopupState.swift */; };
+		A32B404B24CFAC9600CD7337 /* LightDarkThemePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B404A24CFAC9600CD7337 /* LightDarkThemePreview.swift */; };
+		A32B404F24CFACC000CD7337 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32B404E24CFACC000CD7337 /* Preview Assets.xcassets */; };
 		C98C830B24CE50A8000EBF26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C98C830A24CE50A8000EBF26 /* GoogleService-Info.plist */; };
 		C9BC5F1B24C930D200D29128 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC5F1A24C930D200D29128 /* SignUpViewController.swift */; };
 		C9BC5F1D24C9314500D29128 /* SignUp2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC5F1C24C9314500D29128 /* SignUp2ViewController.swift */; };
@@ -477,6 +522,51 @@
 		97650562A7ED4405DB1FC500 /* Pods-Video-Twilio-Video-Internal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Video-Twilio-Video-Internal.debug.xcconfig"; path = "Target Support Files/Pods-Video-Twilio-Video-Internal/Pods-Video-Twilio-Video-Internal.debug.xcconfig"; sourceTree = "<group>"; };
 		97E391D410028974C4641B09 /* Pods-Video-Twilio-Video-TwilioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Video-Twilio-Video-TwilioTests.release.xcconfig"; path = "Target Support Files/Pods-Video-Twilio-Video-TwilioTests/Pods-Video-Twilio-Video-TwilioTests.release.xcconfig"; sourceTree = "<group>"; };
 		A10066E39687E61F986470C1 /* Pods_Video_Twilio_Video_TwilioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Video_Twilio_Video_TwilioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31F5AC924CFB26700E0F0AC /* ElegantCalendar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ElegantCalendar.xcassets; sourceTree = "<group>"; };
+		A32B3FEB24CFAB3200CD7337 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A32B3FEE24CFAB5200CD7337 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		A32B3FF024CFAB6000CD7337 /* MenuBarIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBarIndicator.swift; sourceTree = "<group>"; };
+		A32B3FF124CFAB6100CD7337 /* ScrollBackToTodayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollBackToTodayButton.swift; sourceTree = "<group>"; };
+		A32B3FF224CFAB6300CD7337 /* ResizingOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizingOverlayView.swift; sourceTree = "<group>"; };
+		A32B3FF424CFAB6600CD7337 /* VisitsPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitsPreviewView.swift; sourceTree = "<group>"; };
+		A32B3FF524CFAB6800CD7337 /* FromTodayPopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromTodayPopupView.swift; sourceTree = "<group>"; };
+		A32B3FFC24CFAB8400CD7337 /* VisitsTimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitsTimelineView.swift; sourceTree = "<group>"; };
+		A32B3FFD24CFAB8500CD7337 /* MonthYearSideBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthYearSideBar.swift; sourceTree = "<group>"; };
+		A32B3FFE24CFAB8700CD7337 /* QuoteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		A32B400324CFAB9B00CD7337 /* VisitsPreviewList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitsPreviewList.swift; sourceTree = "<group>"; };
+		A32B400624CFABAF00CD7337 /* DaySideBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaySideBar.swift; sourceTree = "<group>"; };
+		A32B400724CFABB000CD7337 /* DayVisitsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayVisitsView.swift; sourceTree = "<group>"; };
+		A32B400B24CFABBF00CD7337 /* VisitPreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitPreviewCell.swift; sourceTree = "<group>"; };
+		A32B400C24CFABC000CD7337 /* DayPreviewBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayPreviewBlock.swift; sourceTree = "<group>"; };
+		A32B401024CFABFA00CD7337 /* VisitsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitsListView.swift; sourceTree = "<group>"; };
+		A32B401124CFABFB00CD7337 /* VisitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitCell.swift; sourceTree = "<group>"; };
+		A32B401824CFAC4C00CD7337 /* Calendar+DateOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Calendar+DateOperations.swift"; sourceTree = "<group>"; };
+		A32B401924CFAC4E00CD7337 /* Comparable+Clamped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Comparable+Clamped.swift"; sourceTree = "<group>"; };
+		A32B401A24CFAC4F00CD7337 /* DateComponents+Strideable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateComponents+Strideable.swift"; sourceTree = "<group>"; };
+		A32B401B24CFAC5000CD7337 /* EnvironmentKey+Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EnvironmentKey+Timer.swift"; sourceTree = "<group>"; };
+		A32B401C24CFAC5100CD7337 /* Dictionary+SortedKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+SortedKeys.swift"; sourceTree = "<group>"; };
+		A32B401D24CFAC5200CD7337 /* EnvironmentKey+AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EnvironmentKey+AppTheme.swift"; sourceTree = "<group>"; };
+		A32B401E24CFAC5400CD7337 /* View+CaptureSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+CaptureSize.swift"; sourceTree = "<group>"; };
+		A32B401F24CFAC5600CD7337 /* Date+toDateComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+toDateComponents.swift"; sourceTree = "<group>"; };
+		A32B402024CFAC5700CD7337 /* Image+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+Custom.swift"; sourceTree = "<group>"; };
+		A32B402124CFAC5800CD7337 /* Color+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Custom.swift"; sourceTree = "<group>"; };
+		A32B402224CFAC5900CD7337 /* Date+DaysFromToday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+DaysFromToday.swift"; sourceTree = "<group>"; };
+		A32B402324CFAC5A00CD7337 /* Date+toString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+toString.swift"; sourceTree = "<group>"; };
+		A32B402424CFAC5B00CD7337 /* DateComponents+Comparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateComponents+Comparable.swift"; sourceTree = "<group>"; };
+		A32B402524CFAC5D00CD7337 /* View+Rotated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Rotated.swift"; sourceTree = "<group>"; };
+		A32B402624CFAC5E00CD7337 /* DateComponents+Subcomponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateComponents+Subcomponents.swift"; sourceTree = "<group>"; };
+		A32B403624CFAC7100CD7337 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A32B403724CFAC7200CD7337 /* Visit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Visit.swift; sourceTree = "<group>"; };
+		A32B403824CFAC7300CD7337 /* VisitsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitsProvider.swift; sourceTree = "<group>"; };
+		A32B403924CFAC7500CD7337 /* UITableViewDirectAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewDirectAccess.swift; sourceTree = "<group>"; };
+		A32B403E24CFAC8A00CD7337 /* HomeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
+		A32B403F24CFAC8B00CD7337 /* PageScrollState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageScrollState.swift; sourceTree = "<group>"; };
+		A32B404024CFAC8C00CD7337 /* MonthYearSideBarState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthYearSideBarState.swift; sourceTree = "<group>"; };
+		A32B404124CFAC8D00CD7337 /* QuoteState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteState.swift; sourceTree = "<group>"; };
+		A32B404224CFAC8F00CD7337 /* ListScrollState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListScrollState.swift; sourceTree = "<group>"; };
+		A32B404324CFAC9200CD7337 /* FromTodayPopupState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromTodayPopupState.swift; sourceTree = "<group>"; };
+		A32B404A24CFAC9600CD7337 /* LightDarkThemePreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightDarkThemePreview.swift; sourceTree = "<group>"; };
+		A32B404E24CFACC000CD7337 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A75F43370842DD4A8718485D /* Pods-Video-InternalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Video-InternalUITests.debug.xcconfig"; path = "Target Support Files/Pods-Video-InternalUITests/Pods-Video-InternalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B082508FE031E758D3AE0E4D /* Pods-Video-Twilio-Video-TwilioTests-Video-CommunityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Video-Twilio-Video-TwilioTests-Video-CommunityTests.debug.xcconfig"; path = "Target Support Files/Pods-Video-Twilio-Video-TwilioTests-Video-CommunityTests/Pods-Video-Twilio-Video-TwilioTests-Video-CommunityTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B18CDAA6CE26C50150300CC2 /* Pods-Video-Twilio-Video-TwilioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Video-Twilio-Video-TwilioTests.debug.xcconfig"; path = "Target Support Files/Pods-Video-Twilio-Video-TwilioTests/Pods-Video-Twilio-Video-TwilioTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -766,6 +856,7 @@
 		2412822E1E36A6AB002198BE = {
 			isa = PBXGroup;
 			children = (
+				A31F5AC924CFB26700E0F0AC /* ElegantCalendar.xcassets */,
 				241282391E36A6AB002198BE /* VideoApp */,
 				DCE965C7237498F50002EC78 /* Video-CommunityTests */,
 				DCE965B9237492410002EC78 /* Video-InternalTests */,
@@ -791,6 +882,7 @@
 		241282391E36A6AB002198BE /* VideoApp */ = {
 			isa = PBXGroup;
 			children = (
+				A32B404D24CFACB600CD7337 /* Preview Content */,
 				24693EEA1E393F1B00F21DDC /* API */,
 				DC44C2CC23871C2000205174 /* Helpers */,
 				DCE9B05D235A46EA008E5B5B /* IOSVideoAppSecrets */,
@@ -858,6 +950,8 @@
 		24A723E81ECE1D2A00486E7A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A32B400F24CFABF000CD7337 /* VisitsListView */,
+				A32B3FEA24CFAB2600CD7337 /* HomeView */,
 				DC0446C723A2D7720072F597 /* Cells */,
 				DCEDB33524651287006AF70D /* CircleView */,
 				DCEDB3372465129A006AF70D /* CircleButton */,
@@ -908,6 +1002,139 @@
 			);
 			name = Pods;
 			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		A32B3FEA24CFAB2600CD7337 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				A32B3FEE24CFAB5200CD7337 /* MenuView.swift */,
+				A32B3FED24CFAB4400CD7337 /* VisitsPreviewView */,
+				A32B3FEB24CFAB3200CD7337 /* HomeView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		A32B3FED24CFAB4400CD7337 /* VisitsPreviewView */ = {
+			isa = PBXGroup;
+			children = (
+				A32B3FFB24CFAB7200CD7337 /* VisitsTimeLineView */,
+				A32B3FF524CFAB6800CD7337 /* FromTodayPopupView.swift */,
+				A32B3FF024CFAB6000CD7337 /* MenuBarIndicator.swift */,
+				A32B3FF224CFAB6300CD7337 /* ResizingOverlayView.swift */,
+				A32B3FF124CFAB6100CD7337 /* ScrollBackToTodayButton.swift */,
+				A32B3FF424CFAB6600CD7337 /* VisitsPreviewView.swift */,
+			);
+			path = VisitsPreviewView;
+			sourceTree = "<group>";
+		};
+		A32B3FFB24CFAB7200CD7337 /* VisitsTimeLineView */ = {
+			isa = PBXGroup;
+			children = (
+				A32B400224CFAB8F00CD7337 /* VisitsPreviewList */,
+				A32B3FFD24CFAB8500CD7337 /* MonthYearSideBar.swift */,
+				A32B3FFE24CFAB8700CD7337 /* QuoteView.swift */,
+				A32B3FFC24CFAB8400CD7337 /* VisitsTimelineView.swift */,
+			);
+			path = VisitsTimeLineView;
+			sourceTree = "<group>";
+		};
+		A32B400224CFAB8F00CD7337 /* VisitsPreviewList */ = {
+			isa = PBXGroup;
+			children = (
+				A32B400524CFABA500CD7337 /* DayVisitsView */,
+				A32B400324CFAB9B00CD7337 /* VisitsPreviewList.swift */,
+			);
+			path = VisitsPreviewList;
+			sourceTree = "<group>";
+		};
+		A32B400524CFABA500CD7337 /* DayVisitsView */ = {
+			isa = PBXGroup;
+			children = (
+				A32B400A24CFABB300CD7337 /* DayPreviewBlock */,
+				A32B400624CFABAF00CD7337 /* DaySideBar.swift */,
+				A32B400724CFABB000CD7337 /* DayVisitsView.swift */,
+			);
+			path = DayVisitsView;
+			sourceTree = "<group>";
+		};
+		A32B400A24CFABB300CD7337 /* DayPreviewBlock */ = {
+			isa = PBXGroup;
+			children = (
+				A32B400C24CFABC000CD7337 /* DayPreviewBlock.swift */,
+				A32B400B24CFABBF00CD7337 /* VisitPreviewCell.swift */,
+			);
+			path = DayPreviewBlock;
+			sourceTree = "<group>";
+		};
+		A32B400F24CFABF000CD7337 /* VisitsListView */ = {
+			isa = PBXGroup;
+			children = (
+				A32B401124CFABFB00CD7337 /* VisitCell.swift */,
+				A32B401024CFABFA00CD7337 /* VisitsListView.swift */,
+			);
+			path = VisitsListView;
+			sourceTree = "<group>";
+		};
+		A32B401424CFAC2400CD7337 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A32B401824CFAC4C00CD7337 /* Calendar+DateOperations.swift */,
+				A32B402124CFAC5800CD7337 /* Color+Custom.swift */,
+				A32B401924CFAC4E00CD7337 /* Comparable+Clamped.swift */,
+				A32B402224CFAC5900CD7337 /* Date+DaysFromToday.swift */,
+				A32B401F24CFAC5600CD7337 /* Date+toDateComponents.swift */,
+				A32B402324CFAC5A00CD7337 /* Date+toString.swift */,
+				A32B402424CFAC5B00CD7337 /* DateComponents+Comparable.swift */,
+				A32B401A24CFAC4F00CD7337 /* DateComponents+Strideable.swift */,
+				A32B402624CFAC5E00CD7337 /* DateComponents+Subcomponents.swift */,
+				A32B401C24CFAC5100CD7337 /* Dictionary+SortedKeys.swift */,
+				A32B401D24CFAC5200CD7337 /* EnvironmentKey+AppTheme.swift */,
+				A32B401B24CFAC5000CD7337 /* EnvironmentKey+Timer.swift */,
+				A32B402024CFAC5700CD7337 /* Image+Custom.swift */,
+				A32B401E24CFAC5400CD7337 /* View+CaptureSize.swift */,
+				A32B402524CFAC5D00CD7337 /* View+Rotated.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A32B401524CFAC2D00CD7337 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A32B403624CFAC7100CD7337 /* Constants.swift */,
+				A32B403924CFAC7500CD7337 /* UITableViewDirectAccess.swift */,
+				A32B403724CFAC7200CD7337 /* Visit.swift */,
+				A32B403824CFAC7300CD7337 /* VisitsProvider.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A32B401624CFAC3400CD7337 /* ObservableObjects */ = {
+			isa = PBXGroup;
+			children = (
+				A32B404324CFAC9200CD7337 /* FromTodayPopupState.swift */,
+				A32B403E24CFAC8A00CD7337 /* HomeManager.swift */,
+				A32B404224CFAC8F00CD7337 /* ListScrollState.swift */,
+				A32B404024CFAC8C00CD7337 /* MonthYearSideBarState.swift */,
+				A32B403F24CFAC8B00CD7337 /* PageScrollState.swift */,
+				A32B404124CFAC8D00CD7337 /* QuoteState.swift */,
+			);
+			path = ObservableObjects;
+			sourceTree = "<group>";
+		};
+		A32B401724CFAC3B00CD7337 /* Previews */ = {
+			isa = PBXGroup;
+			children = (
+				A32B404A24CFAC9600CD7337 /* LightDarkThemePreview.swift */,
+			);
+			path = Previews;
+			sourceTree = "<group>";
+		};
+		A32B404D24CFACB600CD7337 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A32B404E24CFACC000CD7337 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		DC04468F238F1E2D0072F597 /* User */ = {
@@ -1049,6 +1276,10 @@
 		DC44C2CC23871C2000205174 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				A32B401724CFAC3B00CD7337 /* Previews */,
+				A32B401624CFAC3400CD7337 /* ObservableObjects */,
+				A32B401524CFAC2D00CD7337 /* Models */,
+				A32B401424CFAC2400CD7337 /* Extensions */,
 				DC1C2F9123AC34B30044FB4D /* BundleProtocol.swift */,
 				DC1C2F8523A6E7050044FB4D /* DispatchQueueProtocol.swift */,
 				DCEDB32F2464F9BA006AF70D /* IndexSetHelpers.swift */,
@@ -1663,6 +1894,8 @@
 			dependencies = (
 			);
 			name = "Video-Community";
+			packageProductDependencies = (
+			);
 			productName = VideoApp;
 			productReference = 4B00128B1FBA52E5004A587E /* Video-Community.app */;
 			productType = "com.apple.product-type.application";
@@ -1775,6 +2008,9 @@
 				Base,
 			);
 			mainGroup = 2412822E1E36A6AB002198BE;
+			packageReferences = (
+				A32B3FE524CFAAA000CD7337 /* XCRemoteSwiftPackageReference "ElegantCalendar" */,
+			);
 			productRefGroup = 241282381E36A6AB002198BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1817,6 +2053,8 @@
 				DC9A5DFE245CB66800E4B079 /* VideoView.xib in Resources */,
 				DC44C2C723870D0800205174 /* BasicCell.xib in Resources */,
 				C98C830B24CE50A8000EBF26 /* GoogleService-Info.plist in Resources */,
+				A31F5ACA24CFB26700E0F0AC /* ElegantCalendar.xcassets in Resources */,
+				A32B404F24CFACC000CD7337 /* Preview Assets.xcassets in Resources */,
 				4B0012811FBA52E5004A587E /* Assets.xcassets in Resources */,
 				DC44C2BF238704FB00205174 /* RightDetailCell.xib in Resources */,
 				DC9A5E132460CE9800E4B079 /* ParticipantCell.xib in Resources */,
@@ -2452,6 +2690,7 @@
 				DC8EAE3923BA75C00045018F /* LaunchStore.swift in Sources */,
 				DCEDB34B246F16AD006AF70D /* VideoTrack.swift in Sources */,
 				DC3C32DA24180C3100F56AFB /* APIEncoding.swift in Sources */,
+				A32B401324CFABFB00CD7337 /* VisitCell.swift in Sources */,
 				DCEDB36824743BB5006AF70D /* BandwidthProfileSettingsViewControllerFactory.swift in Sources */,
 				DCDCD374241929E1004A30FC /* TwilioAccessTokenStore.swift in Sources */,
 				DCF4615F2385B10200DD8FEA /* GeneralSettingsViewModel.swift in Sources */,
@@ -2459,7 +2698,10 @@
 				DCEDB39D2475D4D9006AF70D /* SelectStandardRenderDimensionsViewModelFactory.swift in Sources */,
 				DCC7E35F24070C5200431AC3 /* AuthFlowFactory.swift in Sources */,
 				DC85CA6323CE4FCA00BF016F /* AppCenterStoreFactory.swift in Sources */,
+				A32B402C24CFAC5E00CD7337 /* EnvironmentKey+AppTheme.swift in Sources */,
+				A32B400D24CFABC000CD7337 /* VisitPreviewCell.swift in Sources */,
 				DCC7E3572406ED3900431AC3 /* UserDefaultsProtocol.swift in Sources */,
+				A32B403124CFAC5E00CD7337 /* Date+DaysFromToday.swift in Sources */,
 				DCEDB3222464CF90006AF70D /* RoomState.swift in Sources */,
 				DC44C2CB2387118400205174 /* UITableViewCellHelpers.swift in Sources */,
 				DC39248B2416A1D80068E33F /* SelectEnvironmentViewModelFactory.swift in Sources */,
@@ -2472,38 +2714,54 @@
 				DC8EAE4A23BA9F390045018F /* WindowSceneObserving.swift in Sources */,
 				DC1C2F9423AC34B30044FB4D /* BundleProtocol.swift in Sources */,
 				DCEC3D1523861C9800EBDEBF /* SelectOptionViewModelFactory.swift in Sources */,
+				A32B404524CFAC9200CD7337 /* PageScrollState.swift in Sources */,
 				C9BC5F2724C934D400D29128 /* DashboardNavController.swift in Sources */,
 				DC82A36623FF2EB60081578C /* SDKLogLevelSettingsViewControllerFactory.swift in Sources */,
 				DC3C32D62417E6E000F56AFB /* InternalAPIErrorResponseDecoder.swift in Sources */,
 				DCA6501F240D91C90038DEE1 /* CommunityCreateTwilioAccessTokenResponse.swift in Sources */,
+				A32B400824CFABB000CD7337 /* DaySideBar.swift in Sources */,
 				DC1C2F8C23A6E7270044FB4D /* NotificationCenterProtocol.swift in Sources */,
+				A32B403B24CFAC7500CD7337 /* Visit.swift in Sources */,
 				DCEDB353246F16E2006AF70D /* RemoteVideoTrack.swift in Sources */,
 				DC9A5DD4245B332D00E4B079 /* RemoteParticipant.swift in Sources */,
 				DC8EAE3523BA71990045018F /* LaunchStoresFactory.swift in Sources */,
+				A32B3FF724CFAB6900CD7337 /* ScrollBackToTodayButton.swift in Sources */,
 				C9BC5F2F24C9365A00D29128 /* ScheduleViewController.swift in Sources */,
 				DCEDB3322464F9BA006AF70D /* IndexSetHelpers.swift in Sources */,
 				DC44C2EC23876B4700205174 /* EditTextSegueSender.swift in Sources */,
 				C9BC5F1D24C9314500D29128 /* SignUp2ViewController.swift in Sources */,
+				A32B400424CFAB9B00CD7337 /* VisitsPreviewList.swift in Sources */,
 				DC4E4E2523577EE500C5D313 /* Topology.swift in Sources */,
 				DC0446D123A2F01A0072F597 /* DeveloperSettingsViewControllerFactory.swift in Sources */,
 				DC0446CD23A2EE340072F597 /* DeveloperSettingsViewModel.swift in Sources */,
+				A32B403C24CFAC7500CD7337 /* VisitsProvider.swift in Sources */,
+				A32B3FF624CFAB6900CD7337 /* MenuBarIndicator.swift in Sources */,
+				A32B402824CFAC5E00CD7337 /* Comparable+Clamped.swift in Sources */,
 				DCD7675823DF554B00A2939C /* UserActivityStore.swift in Sources */,
 				DCEDB32A2464EB0B006AF70D /* RoomViewModelFactory.swift in Sources */,
 				DCAEBF322383560500141D2D /* EditTextCell.swift in Sources */,
 				C9BC5F2524C9349A00D29128 /* TabBarController.swift in Sources */,
 				DC9A5E07245DDC1000E4B079 /* RoomViewModelData.swift in Sources */,
+				A32B402F24CFAC5E00CD7337 /* Image+Custom.swift in Sources */,
 				DC82A35E23FDB9420081578C /* SDKLogLevelSettingsViewModel.swift in Sources */,
 				DCAEBF16238331A800141D2D /* SwitchCell.swift in Sources */,
 				DC9A5E0B245DFFC100E4B079 /* ParticipantsStore.swift in Sources */,
+				A32B3FF824CFAB6900CD7337 /* ResizingOverlayView.swift in Sources */,
 				DC82A35123FC9AAA0081578C /* JSONContainer.swift in Sources */,
 				DC9A5DD8245B90BB00E4B079 /* ParticipantCell.swift in Sources */,
+				A32B403224CFAC5E00CD7337 /* Date+toString.swift in Sources */,
+				A32B400924CFABB000CD7337 /* DayVisitsView.swift in Sources */,
 				DCEDB36424743A15006AF70D /* BandwidthProfileSettingsViewModel.swift in Sources */,
 				DCEDB384247489A0006AF70D /* SettingOptions.swift in Sources */,
+				A32B402A24CFAC5E00CD7337 /* EnvironmentKey+Timer.swift in Sources */,
 				DC9A5E352462211D00E4B079 /* CameraManagerFactory.swift in Sources */,
+				A32B402724CFAC5E00CD7337 /* Calendar+DateOperations.swift in Sources */,
+				A32B403D24CFAC7500CD7337 /* UITableViewDirectAccess.swift in Sources */,
 				DC3C32DE241812B400F56AFB /* APIURLFactory.swift in Sources */,
 				DC8EAE4123BA926E0045018F /* VideoStore.swift in Sources */,
 				DC8EAE3123BA5EC80045018F /* AppDelegate.swift in Sources */,
 				4B0012631FBA52E5004A587E /* StatsViewController.m in Sources */,
+				A32B404724CFAC9200CD7337 /* QuoteState.swift in Sources */,
 				DC9A5E4D2463575F00E4B079 /* UserStoreFactory.swift in Sources */,
 				DC9A5DC7245A0B5F00E4B079 /* Room.swift in Sources */,
 				DC0446BA23A182980072F597 /* CrashReportStore.swift in Sources */,
@@ -2511,18 +2769,22 @@
 				DCEDB388247489DA006AF70D /* SelectSettingViewModel.swift in Sources */,
 				DCB7C18B2405BE40009DEA70 /* KeychainStore.swift in Sources */,
 				DCEDB38C2475B693006AF70D /* VideoDimensionsName.swift in Sources */,
+				A32B404824CFAC9200CD7337 /* ListScrollState.swift in Sources */,
 				DCB64B4B240995A100E090BE /* APIHTTPMethod.swift in Sources */,
 				DCF4615723859BB800DD8FEA /* AppInfoStore.swift in Sources */,
 				DCEDB35F24733641006AF70D /* LoginViewController.swift in Sources */,
 				DCA53956235F89BE00CA26FB /* CommunityAuthStore.swift in Sources */,
 				DCAEBF392383581F00141D2D /* EditTextViewController.swift in Sources */,
+				A32B403024CFAC5E00CD7337 /* Color+Custom.swift in Sources */,
 				243CDB4C22665F1800637B6B /* TwilioColors.swift in Sources */,
 				DC3924922416A8070068E33F /* APIErrorResponseDecoder.swift in Sources */,
+				A32B403A24CFAC7500CD7337 /* Constants.swift in Sources */,
 				DC2511A9247817C600C776D6 /* EditMaxTracksViewModel.swift in Sources */,
 				DCEDB3952475D349006AF70D /* RenderDimensionsSettingsViewControllerFactory.swift in Sources */,
 				DCEDB37024743DD4006AF70D /* SelectBandwidthProfileModeViewModelFactory.swift in Sources */,
 				DCD7675323DBA3AA00A2939C /* DeepLinkStore.swift in Sources */,
 				C9BC5F2924C934FF00D29128 /* DashboardViewController.swift in Sources */,
+				A32B3FFF24CFAB8700CD7337 /* VisitsTimelineView.swift in Sources */,
 				DCA5394A235F53E700CA26FB /* InternalAuthStore.swift in Sources */,
 				DCEDB378247443E3006AF70D /* SelectDominantSpeakerPriorityViewModelFactory.swift in Sources */,
 				DCEDB357246F1702006AF70D /* LocalVideoTrack.swift in Sources */,
@@ -2531,6 +2793,7 @@
 				DCEC3D1D23861E1700EBDEBF /* SelectVideoCodecViewModelFactory.swift in Sources */,
 				DCF4615323859BA400DD8FEA /* AppInfo.swift in Sources */,
 				DC9A5E2F2462153000E4B079 /* CameraManager.swift in Sources */,
+				A32B3FFA24CFAB6900CD7337 /* FromTodayPopupView.swift in Sources */,
 				DCEDB3A12476C531006AF70D /* SelectHighRenderDimensionsViewModelFactory.swift in Sources */,
 				DCF4615B2385A51700DD8FEA /* SettingsViewController.swift in Sources */,
 				DCB7C1872405BD68009DEA70 /* API.swift in Sources */,
@@ -2544,6 +2807,7 @@
 				C9F1397F24C4C4DE000F9E0B /* StartNavController.swift in Sources */,
 				DCEDB374247442D9006AF70D /* TrackPriority.swift in Sources */,
 				DC44C2E823876AFB00205174 /* SelectOptionSegueSender.swift in Sources */,
+				A32B404624CFAC9200CD7337 /* MonthYearSideBarState.swift in Sources */,
 				DCB7C1902405C0BE009DEA70 /* KeychainStorage.swift in Sources */,
 				DC44C2E423875C4F00205174 /* StringHelpers.swift in Sources */,
 				DCF4614E238598C700DD8FEA /* SettingsViewModel.swift in Sources */,
@@ -2551,15 +2815,21 @@
 				DC8AA8AF236228A3006C06D5 /* AuthStoreFactory.swift in Sources */,
 				DCDCD37C2419306E004A30FC /* CommunityTwilioAccessTokenStore.swift in Sources */,
 				DCB64B572409BC4E00E090BE /* APIConfig.swift in Sources */,
+				A32B404424CFAC9200CD7337 /* HomeManager.swift in Sources */,
 				DCEC3D082386085B00EBDEBF /* EditTextViewModelFactory.swift in Sources */,
 				DC44C2BC238704FB00205174 /* RightDetailCell.swift in Sources */,
+				A32B404924CFAC9200CD7337 /* FromTodayPopupState.swift in Sources */,
 				DCD7675C23DF56FE00A2939C /* UserActivityStoreFactory.swift in Sources */,
 				DC82A39224008AFE0081578C /* SelectSDKLogLevelViewModelFactory.swift in Sources */,
 				DCEDB36C24743D1D006AF70D /* BandwidthProfileMode.swift in Sources */,
+				A32B3FEC24CFAB3200CD7337 /* HomeView.swift in Sources */,
+				A32B401224CFABFB00CD7337 /* VisitsListView.swift in Sources */,
 				DCEDB31E2464C4CD006AF70D /* TrackName.swift in Sources */,
 				DC82A39624008DCB0081578C /* SDKLogLevelOptionListFactory.swift in Sources */,
 				DC82A39A2404950B0081578C /* PasscodeSignInViewController.swift in Sources */,
 				4B0012691FBA52E5004A587E /* StatsUIModel.m in Sources */,
+				A32B402924CFAC5E00CD7337 /* DateComponents+Strideable.swift in Sources */,
+				A32B400124CFAB8700CD7337 /* QuoteView.swift in Sources */,
 				DC8EAE4E23BA9F5E0045018F /* WindowSceneObserverFactory.swift in Sources */,
 				DC044686238EF6C20072F597 /* Environment.swift in Sources */,
 				DC9A5E492463345F00E4B079 /* LobbyViewController.swift in Sources */,
@@ -2567,29 +2837,39 @@
 				DCF461632385B13000DD8FEA /* AdvancedSettingsViewModel.swift in Sources */,
 				DC9A5DCC245A215000E4B079 /* RoomViewController.swift in Sources */,
 				DC1C2F8023A445740044FB4D /* Notifications.swift in Sources */,
+				A32B403424CFAC5E00CD7337 /* View+Rotated.swift in Sources */,
+				A32B402E24CFAC5E00CD7337 /* Date+toDateComponents.swift in Sources */,
 				DCDCD380241930A7004A30FC /* TwilioAccessTokenStoreFactory.swift in Sources */,
 				DCAEBF5523849C1C00141D2D /* VideoCodec.swift in Sources */,
 				DCA80B2E236C77C6009141C9 /* LaunchFlowFactory.swift in Sources */,
 				DCA5394E235F740200CA26FB /* AuthStore.swift in Sources */,
 				24C5217B20FFAD030018E2D8 /* EmailPasswordLoginViewController.swift in Sources */,
+				A32B402B24CFAC5E00CD7337 /* Dictionary+SortedKeys.swift in Sources */,
 				DCD940B3243B9B7A00D9ECC5 /* ConnectOptionsFactory.swift in Sources */,
 				DCEDB3992475D476006AF70D /* SelectLowRenderDimensionsViewModelFactory.swift in Sources */,
 				DCC7E35B2407081F00431AC3 /* SignInSegueIdentifierFactory.swift in Sources */,
 				DC85CA4E23CCD39400BF016F /* AppCenterStore.swift in Sources */,
 				DCB64B512409976F00E090BE /* APIRequest.swift in Sources */,
+				A32B404B24CFAC9600CD7337 /* LightDarkThemePreview.swift in Sources */,
 				DC9A5E1F2461C0A100E4B079 /* MicTrackFactory.swift in Sources */,
 				DCB7C1832405BD2C009DEA70 /* PasscodeComponents.swift in Sources */,
 				DC3C32D22417E6C400F56AFB /* CommunityAPIErrorResponseDecoder.swift in Sources */,
 				DCEDB3262464D7EE006AF70D /* RoomFactory.swift in Sources */,
 				C9BC5F2324C9339900D29128 /* LogonViewController.swift in Sources */,
 				DC9A5DD0245B0E6100E4B079 /* LocalParticipant.swift in Sources */,
+				A32B403324CFAC5E00CD7337 /* DateComponents+Comparable.swift in Sources */,
+				A32B400E24CFABC000CD7337 /* DayPreviewBlock.swift in Sources */,
 				DC9A5E02245CB67600E4B079 /* VideoView.swift in Sources */,
+				A32B3FEF24CFAB5200CD7337 /* MenuView.swift in Sources */,
 				DC386DD32458DC05009E994A /* RoomViewModel.swift in Sources */,
 				C9F1397D24C4C4A2000F9E0B /* StartViewController.swift in Sources */,
+				A32B400024CFAB8700CD7337 /* MonthYearSideBar.swift in Sources */,
 				DCA80B2A236B821E009141C9 /* LaunchFlow.swift in Sources */,
 				DC044697238F1FAA0072F597 /* User.swift in Sources */,
 				DC9A5DC22459F1D100E4B079 /* Participant.swift in Sources */,
+				A32B3FF924CFAB6900CD7337 /* VisitsPreviewView.swift in Sources */,
 				DC8EAE3D23BA88850045018F /* URLOpening.swift in Sources */,
+				A32B403524CFAC5E00CD7337 /* DateComponents+Subcomponents.swift in Sources */,
 				DC9A5E3924622C6100E4B079 /* CameraConfigFactory.swift in Sources */,
 				4B00126C1FBA52E5004A587E /* HeaderTableViewCell.m in Sources */,
 				DCEC3D1923861D3700EBDEBF /* SelectTopologyViewModelFactory.swift in Sources */,
@@ -2605,6 +2885,7 @@
 				DC1C2F8823A6E7050044FB4D /* DispatchQueueProtocol.swift in Sources */,
 				DCC7E36324082EB300431AC3 /* AuthError.swift in Sources */,
 				DCAEBF1E2383342C00141D2D /* DestructiveButtonCell.swift in Sources */,
+				A32B402D24CFAC5E00CD7337 /* View+CaptureSize.swift in Sources */,
 				DC9A5E3D2463161400E4B079 /* CircleView.swift in Sources */,
 				C9F1397B24C4C32F000F9E0B /* WelcomeViewController.swift in Sources */,
 				DC9A5E412463239E00E4B079 /* ToggleButton.swift in Sources */,
@@ -2852,7 +3133,10 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = VideoApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 0.1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -2885,7 +3169,10 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = VideoApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 0.1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -2921,7 +3208,10 @@
 				);
 				INFOPLIST_FILE = VideoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 0.1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -2956,7 +3246,10 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = VideoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 0.1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -2987,7 +3280,11 @@
 				DEVELOPMENT_TEAM = SX5J6BN2KX;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Video-InternalUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.twilio.Video-InternalUITests";
@@ -3013,7 +3310,11 @@
 				DEVELOPMENT_TEAM = SX5J6BN2KX;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Video-InternalUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.twilio.Video-InternalUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3036,7 +3337,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Video-InternalTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.twilio.Video-InternalTests";
@@ -3061,7 +3366,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Video-InternalTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.twilio.Video-InternalTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3084,7 +3393,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Video-CommunityTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.twilio.Video-CommunityTests";
@@ -3109,7 +3422,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Video-CommunityTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.twilio.Video-CommunityTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3178,6 +3495,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A32B3FE524CFAAA000CD7337 /* XCRemoteSwiftPackageReference "ElegantCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ThasianX/ElegantCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 2412822F1E36A6AB002198BE /* Project object */;
 }

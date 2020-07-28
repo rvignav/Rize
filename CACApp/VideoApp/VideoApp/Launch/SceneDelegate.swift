@@ -15,6 +15,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 @available(iOS 13, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -26,14 +27,26 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var windowSceneObserverFactory: WindowSceneObserverFactory = WindowSceneObserverFactoryImpl()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        let windowScene = scene as! UIWindowScene
-        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-        window?.windowScene = windowScene
-        launchFlow = launchFlowFactory.makeLaunchFlow(window: window!)
-        launchFlow?.start()
-
-        if let userActivity = connectionOptions.userActivities.first {
-            self.scene(scene, continue: userActivity)
+//        let windowScene = scene as! UIWindowScene
+//        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+//        window?.windowScene = windowScene
+//        launchFlow = launchFlowFactory.makeLaunchFlow(window: window!)
+//        launchFlow?.start()
+//
+//        if let userActivity = connectionOptions.userActivities.first {
+//            self.scene(scene, continue: userActivity)
+//        }
+        if let windowScene = scene as? UIWindowScene {
+            let window = UIWindow(windowScene: windowScene)
+            window.rootViewController = UIHostingController(
+                rootView: HomeView(
+                    manager: HomeManager(
+                        visits: Visit.mocks(
+                            start: .daysFromToday(-365*4)))
+                )
+            )
+            self.window = window
+            window.makeKeyAndVisible()
         }
     }
 
