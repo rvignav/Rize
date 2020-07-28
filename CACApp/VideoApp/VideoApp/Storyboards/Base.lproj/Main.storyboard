@@ -1448,44 +1448,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Apf-7R-uVG" customClass="FSCalendar">
-                                <rect key="frame" x="15" y="282" width="384" height="479"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
-                                        <color key="value" red="0.38431372549999998" green="0.85098039219999999" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="eventDefaultColor">
-                                        <color key="value" red="1" green="0.33725490200000002" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="dataSource" destination="Pqg-dt-fgE" id="0vN-fA-6TP"/>
-                                    <outlet property="delegate" destination="Pqg-dt-fgE" id="t8Y-rS-2mh"/>
-                                </connections>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4PR-yl-7lQ" firstAttribute="centerX" secondItem="xdA-zv-qDH" secondAttribute="centerX" id="F5L-06-kTp"/>
-                            <constraint firstItem="Apf-7R-uVG" firstAttribute="centerX" secondItem="BRD-Am-Iwd" secondAttribute="centerX" id="HyV-Ea-KjN"/>
-                            <constraint firstItem="Apf-7R-uVG" firstAttribute="top" secondItem="xdA-zv-qDH" secondAttribute="bottom" constant="34" id="Lb4-ll-7eT"/>
                             <constraint firstItem="aG9-lT-e2C" firstAttribute="top" secondItem="Hqw-xh-gey" secondAttribute="top" constant="59" id="RFz-F9-waC"/>
                             <constraint firstItem="4PR-yl-7lQ" firstAttribute="leading" secondItem="Hqw-xh-gey" secondAttribute="leading" constant="76" id="RST-Aw-Fk4"/>
                             <constraint firstItem="4PR-yl-7lQ" firstAttribute="top" secondItem="Hqw-xh-gey" secondAttribute="top" constant="61" id="WRU-JC-ryH"/>
                             <constraint firstItem="xdA-zv-qDH" firstAttribute="top" secondItem="4PR-yl-7lQ" secondAttribute="bottom" constant="5" id="ago-au-g1M"/>
-                            <constraint firstItem="Apf-7R-uVG" firstAttribute="leading" secondItem="Hqw-xh-gey" secondAttribute="leading" constant="10" id="dnV-VR-7WO"/>
                             <constraint firstItem="Hqw-xh-gey" firstAttribute="trailing" secondItem="aG9-lT-e2C" secondAttribute="trailing" constant="70" id="hsU-tV-3g2"/>
                             <constraint firstItem="aG9-lT-e2C" firstAttribute="leading" secondItem="4PR-yl-7lQ" secondAttribute="trailing" constant="68" id="nEX-DM-Bmh"/>
                             <constraint firstItem="aG9-lT-e2C" firstAttribute="centerX" secondItem="BVG-da-vsO" secondAttribute="centerX" id="qqf-pf-yHW"/>
                             <constraint firstItem="BVG-da-vsO" firstAttribute="top" secondItem="aG9-lT-e2C" secondAttribute="bottom" constant="6" id="vfI-y4-ZxQ"/>
-                            <constraint firstItem="Hqw-xh-gey" firstAttribute="bottom" secondItem="Apf-7R-uVG" secondAttribute="bottom" constant="52" id="xNE-Pe-8EG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hqw-xh-gey"/>
                     </view>
                     <navigationItem key="navigationItem" title="Dashboard" id="gQn-Jf-5UA"/>
                     <connections>
-                        <outlet property="calendar" destination="Apf-7R-uVG" id="KgM-7s-sR2"/>
                         <outlet property="host" destination="4PR-yl-7lQ" id="TFC-Zb-Rxx"/>
                         <outlet property="schedule" destination="aG9-lT-e2C" id="tLJ-fe-lGK"/>
                     </connections>
