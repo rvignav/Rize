@@ -5,15 +5,20 @@
 //  Copyright © 2020 Rize. All rights reserved.
 //
 
-import FSCalendar
 import UIKit
-import DateToolsSwift
 import FirebaseAuth
 
-class DashboardViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelegateAppearance {
+class DashboardViewController: UIViewController {
     
-    @IBOutlet weak var calendar: FSCalendar!
     
+    @IBAction func host(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "startVideoNav") as! StartNavController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
+    
+    @IBAction func schedule(_ sender: Any) {
+    }
     @IBOutlet weak var host: UIButton!
     @IBOutlet weak var schedule: UIButton!
     
@@ -49,21 +54,6 @@ class DashboardViewController: UIViewController, FSCalendarDelegate, FSCalendarD
 
         
         
-    }
-    
-    func calendar(_ calendar: FSCalendar, willDisplay cell: FSCalendarCell, for date: Date, at monthPosition: FSCalendarMonthPosition) {
-        let dateFormatter3 = DateFormatter()
-        dateFormatter3.dateFormat = "yyyy-MM-dd"
-        let dateString = dateFormatter3.string(from: date)
-
-        //display events as dots
-        cell.eventIndicator.isHidden = false
-        
-        print(self.dates)
-
-        if self.dates.contains(dateString){
-            cell.eventIndicator.numberOfEvents = 1
-        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -193,17 +183,6 @@ class DashboardViewController: UIViewController, FSCalendarDelegate, FSCalendarD
         for animator in runningAnimations {
             animator.continueAnimation(withTimingParameters: nil, durationFactor: 0)
         }
-    }
-    
-    @IBAction func schedule(_ sender: Any) {
-    
-        
-    }
-    
-    @IBAction func new(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "startVideoNav") as! StartNavController
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
     }
 
     
