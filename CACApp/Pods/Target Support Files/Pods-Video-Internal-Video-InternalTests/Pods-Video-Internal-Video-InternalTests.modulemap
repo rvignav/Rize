@@ -1,6 +1,0 @@
-framework module Pods_Video_Internal_Video_InternalTests {
-  umbrella header "Pods-Video-Internal-Video-InternalTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
